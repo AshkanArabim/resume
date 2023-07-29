@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Vignesh Iyer                                 %
+% MS CSE ASU                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modified by Ashkan Arabi
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\begin{document}
+
+\introduction[
+    fullname=Ashkan Arabi,
+    phone=(915) 888 - 9801,
+    email=aarabimian@miners.utep.edu,
+    linkedin=/in/ashkan-arabi,
+    github=github.com/AshkanArabim
+]
+
+% \summary{Senior mechanical engineering student with internship experience in medical device manufacturing and product development. Project experience includes applications of software and hardware. Seeking full-time position May 2020 in medical device manufacturing and  pharmaceutical production. }
+
+\education{
+\educationItem[
+university=the University of Texas at El Paso{,} El Paso{,} TX,
+% college=Barrett{,} The Honors College,
+graduation=May 2026,
+grade=3.91,
+majorgrade=4.00,
+program=B.S. Computer Science{,} Mathematics Minor,
+honors=Dean's List since Fall '22 {,} Houston Endowment Scholarship Recipient,
+% Undergraduate Fellows{,} 
+coursework=Discrete Structures{,} Data Structures{,} Matrix Algebra{,} Computer Architecture,
+% 
+]
+}
+
+\skills{
+\skillItem[
+category=Programming / Markup Languages,
+skills=Python{,} JavaScript{,} Java{,} Bash{,} LaTeX{,} C++
+% HTML/CSS{,} 
+] \\
+\skillItem[
+category=Frameworks \& software,
+skills=TensorFlow{,} git{,} ReactJS{,} Singularity
+% Django {,} Microsoft Office {,} SSH{,} 
+]\\
+\skillItem[
+    category=Certifications,
+    skills=Coursera Deep Learning Specialization {-} August 2023
+] % \\
+% \skillItem[
+%     category=Foreign Languages,
+%     skills=Persian (Native){,} Spanish (Fluent){,} French (Beginner)
+% ]
+}
+
+\begin{workSection}{Experience}
+    \experienceItem[
+    company=Temple University,
+    location=Philadelphia{,} PA,
+    position=Undergraduate Researcher,
+    duration=June – July 2023
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        % \item Applied measurement system analysis (MSA) to qualify relocated test equipment (JMP, Python)
+        \item Conducted original research on using Wi-Fi CSI for hand gesture recognition on smartphones (LaTeX)
+              % \item Authored three technical reports for relocated packaging equipment, following IQOQPQ guides (JMP, Excel)
+        \item Developed novel lightweight CNN architecture to classify 5 gestures (TensorFlow, Python, Bash)
+        \item Used HPC GPU cluster for model development \& optimization (SSH, Singularity, Bash)
+    \end{itemize}
+
+    \experienceItem[
+    company=UTEP,
+    location=El Paso{,} TX,
+    position=Computer Lab Assistant,
+    duration=January {-} May 2023
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Troubleshooted hardware \& software of more than 10 students and faculty daily (Windows, MacOS)
+        \item Maintained and updated fleet of 500+ computers (Windows)
+    \end{itemize}
+
+\end{workSection}
+
+\begin{workSection}{Academic \& Projects}
+    \customItem[
+        title=Music Genre Classification,
+        duration=Spring 2023,
+        keyHighlight=Developed convolutional model to classify music genres based on their mel spectrogram.
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Led team of 3 to meet project deadlines by dividing tasks based on skill level (Project Management)
+        \item Designed, tested, and implemented CNN model for classification (TensorFlow, Numpy, Conda)
+    \end{itemize}
+
+    \customItem[
+    title=Blabber {-} a CLI Twitter replica,
+    duration=Fall 2022,
+    keyHighlight=Made CSI app that allows users to create an account{,} post{,} follow others{,} see a timeline{,} and delete their account
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Used scanners and writers to save{,} update{,} and delete user information and posts (Java)
+    \end{itemize}
+
+    \customItem[
+        title=Contribution to Monkeytype,
+        duration=Spring 2021,
+        keyHighlight=Added 3 levels of Persian tests to open source typing test website
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed script to extract and check words from large text bodies using Vajehyab.com dictionary API (Python)
+        \item Uploaded more than 21,000 most used Persian words to site database (git, GitHub)
+    \end{itemize}
+\end{workSection}
+
+\begin{workSection}{Personal Projects}
+    % in case you change your mind:
+    % \experienceItem[
+    % company=Arizona State University,
+    % location=Tempe{,} AZ,
+    % position=Tutor (10 hours/week),
+    % duration=Aug 2018 – May 2019
+    % ]
+    % \begin{itemize}
+    %     \vspace{-0.5em}
+    %     \itemsep -6pt {}
+    %     \item Tutored 10-15 undergraduate engineering students per week in MATLAB programming and math coursework
+    % \end{itemize}
+    \customItem[
+        title=Chess Knight Path Finder,
+        duration=Spring 2023,
+        keyHighlight=Used DFS graph traversal to find the most optimal path for chess knight.
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Given a starting and ending point, algorithm finds least number of steps to reach destination (JavaScript)
+    \end{itemize}
+    \customItem[
+        title=Weather Webapp,
+        duration=Spring 2023,
+        keyHighlight=Used variety of web APIs to develop weather forecast webapp with dynamic UI elements
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Used asynchronous programming to fetch and render data from OpenWeatherMap.org (JavaScript)
+        \item Bundled site assets using Webpack to minimize deployment size (Webpack)
+    \end{itemize}
+    \customItem[
+        title=To Do List Webapp,
+        duration=Fall 2022,
+        keyHighlight=Developed interactive to-do list webapp with local save function through vanilla JS
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed all internal logic from scratch following OOP principles (JavaScript)
+        \item Used Chrome's local storage API for saving user data (JavaScript)
+        \item Used typical git/GitHub workflow during implementation (git, GitHub)
+    \end{itemize}
+\end{workSection}
+
+\begin{workSection}{Leadership}
+    \customItem[
+        title=Association for Computing Machinery,
+        keyHighlight=Multiple leadership roles{,} including publicity offier \& treasurer),
+        duration=Fall 2022 - Present
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Recruited 50+ members through tabling and PowerPoint presentations. (presentation)
+        \item Assisted with organizing and planning of more than 6 workshops sponsored by companies such as Google. (management)
+    \end{itemize}
+\end{workSection}
+
+\end{document}
