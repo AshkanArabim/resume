@@ -6,3 +6,6 @@
 *.fdb_latexmk
 *.gz
 old/
+*.ini
+*.pdf
+*.swp
