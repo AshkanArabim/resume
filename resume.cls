@@ -124,7 +124,8 @@
 }
 
 \newkeycommand{\experienceItem}[company, position, location, duration]{
-    \textbf{\commandkey{company}, \commandkey{location}: \commandkey{position}} \hfill {\commandkey{duration}}
+    % \textbf{\commandkey{company}, \commandkey{location}: \commandkey{position}} \hfill {\commandkey{duration}}
+    % \textbf{\commandkey{company}, \commandkey{location}: \commandkey{position}} \hfill {\commandkey{duration}}
 }
 
 \newkeycommand{\customItem}[title, duration, keyHighlight]{
