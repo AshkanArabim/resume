@@ -9,7 +9,7 @@
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
 % set document margins
-\usepackage[left=0.3 in,top=0.2in,right=0.3in,bottom=0.2in]{geometry}
+\usepackage[left=0.4in,top=0.3in,right=0.4in,bottom=0.3in]{geometry}
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 
 \usepackage{keycommand}
@@ -95,8 +95,8 @@
     {\commandkey{university}} \hfill \ifcommandkey{grade}{GPA: \commandkey{grade}}{} \\
     \ifcommandkey{majorgrade}{\rightline{Major GPA: \commandkey{majorgrade}}}{} \\
     % \ifcommandkey{college}{\commandkey{college}}{} \\
-    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{} \\
-    \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{}
+    \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} \\
+    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{}
 }
 
 \newcommand{\skills}{
@@ -129,6 +129,6 @@
 }
 
 \newkeycommand{\customItem}[title, duration, keyHighlight]{
-    \textbf{\commandkey{title}} \hfill {\commandkey{duration}} \\
-    \ifcommandkey{keyHighlight}{\commandkey{keyHighlight}}{}
+    \textbf{\commandkey{title}} \hfill {\commandkey{duration}} % //
+    % \ifcommandkey{keyHighlight}{\commandkey{keyHighlight}}{}
 }
