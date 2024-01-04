@@ -2,7 +2,7 @@
 This is where I host my constantly updating resume. Everything is written in LaTeX (totally recommended btw), so maintaining it is as easy as maintaining code.
 
 ## Getting Started
-- For the most up-to-date single-page resume, just open / download `general.pdf`.
+- For the most up-to-date single-page resume, just open / download `Ashkan Arabi general.pdf`.
 - Or if you want to see my complete CV, you can uncomment everything and compile the tex file.
 
 ## Acknowledgement:
