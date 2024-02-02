@@ -33,7 +33,8 @@ graduation=May 2026,
 grade=3.94,
 majorgrade=4.00,
 program=Bachelor of Science in Computer Science{,} Mathematics Minor,
-coursework=Data Structures \& Algorithms{,} Discrete Math{,} Matrix Algebra{,} Computer Architecture{,} Statistics,
+coursework=Object-Oriented Programming{,} Data Structures \& Algorithms{,} Discrete Math{,} Matrix Algebra,
+% Computer Architecture{,} Statistics,
  %{,} Introductory Mechanics, 
 honors=Dean's List since Fall '22 {,} Houston Endowment Scholarship Recipient,
 % Undergraduate Fellows{,} 
@@ -50,7 +51,8 @@ skills=Python{,} Vala{,} HTML/CSS{,} C++{,} JavaScript{,} Java{,} C{,} LaTeX{,} 
 \skillItem[
 category=Frameworks \& Software,
 % for data science / ML:
-skills=Linux{,} NumPy{,} Pandas{,} TensorFlow{,} git{,} React.JS{,} Conda{,} Docker{,} Microsoft Office,
+skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.JS{,} Conda{,} Microsoft Office,
+%Docker{,} 
 % Other stuff:
 % skills=Adobe Photoshop{,} Adobe Illustrator{,},
 % mah:
@@ -86,14 +88,27 @@ skills=Linux{,} NumPy{,} Pandas{,} TensorFlow{,} git{,} React.JS{,} Conda{,} Doc
 	\experienceItem[
 	company=UTEP,
 	location=El Paso{,} TX,
-	position=Undergraduate TA for Data Structures \& Algorithms,
+	position=Undergraduate Research Assistant,
 	duration=January 2024 - present,
 	]
 	\begin{itemize}
 		\vspace{-0.5em}
 		\itemsep -6pt {}
-		\item Helped 30+ students understand challenging concepts such as B-Trees and Dijkstra's Algorithm.
+		\item Contribute to the creation of speech-anomaly detection system by using generative AI to synthesize training datasets.
+		\item Used \textbf{PyTorch} to reconstruct state-of-the-art networks proposed in papers.
 	\end{itemize}
+	
+%	\experienceItem[
+%	company=UTEP,
+%	location=El Paso{,} TX,
+%	position=Undergraduate TA for Data Structures \& Algorithms,
+%	duration=January 2024 - present,
+%	]
+%	\begin{itemize}
+%		\vspace{-0.5em}
+%		\itemsep -6pt {}
+%		\item Helped 30+ students understand challenging concepts such as B-Trees and Dijkstra's Algorithm.
+%	\end{itemize}
 	
 	\experienceItem[
 	company=GNOME Foundation,
@@ -105,8 +120,9 @@ skills=Linux{,} NumPy{,} Pandas{,} TensorFlow{,} git{,} React.JS{,} Conda{,} Doc
 		\vspace{-0.5em}
 		\itemsep -6pt {}
 %		\item Improved the GNOME Clocks user experience by fixing various reported bugs.
-		\item Fixed bug causing GNOME Clocks timers to not progress during system suspend by setting a target in UNIX time.
-		\item Expanded the accessibility of the GNOME Builder IDE by translating it to Persian.
+		\item Fixed bug causing GNOME Clocks timers to not progress during system suspend by reworking the timer logic.
+		\item Added functionality to world clock to show country and state in case two cities have the same name.
+%		\item Expanded the accessibility of the GNOME Builder IDE by translating it to Persian.
 	\end{itemize}
 
     \experienceItem[
@@ -133,19 +149,19 @@ skills=Linux{,} NumPy{,} Pandas{,} TensorFlow{,} git{,} React.JS{,} Conda{,} Doc
     %     \item Provided top-tier hardware \& software tech support for 10+ students, staff, and faculty daily.
     %     \item Maintained and updated hardware \& software of 500+ computers through regular checkups.
 %     \end{itemize}
-    \experienceItem[
-    company=UTEP,
-    location=El Paso{,} TX,
-    position=Volunteer Researcher,
-    duration=August {-} October 2023
-    ]
-    \begin{itemize}
-    \vspace{-0.5em}
-    \itemsep -6pt {}
-    \item Collaborated to develop dynamic software for training users' weaknesses in spotting Phishing emails.
-    \item Trained deep transformer model using \textbf{TensorFlow and Keras} to classify email cues, such as a sense or urgency.
-    \item Preprocessed and visualized more than 5 datasets using \textbf{Pandas and NLTK} to use as training material for model.
-    \end{itemize}
+%    \experienceItem[
+%    company=UTEP,
+%    location=El Paso{,} TX,
+%    position=Volunteer Researcher,
+%    duration=August {-} October 2023
+%    ]
+%    \begin{itemize}
+%    \vspace{-0.5em}
+%    \itemsep -6pt {}
+%    \item Collaborated to develop dynamic software for training users' weaknesses in spotting Phishing emails.
+%    \item Trained deep transformer model using \textbf{TensorFlow and Keras} to classify email cues, such as a sense of urgency.
+%    \item Preprocessed and visualized more than 5 datasets using \textbf{Pandas and NLTK} to use as training material for model.
+%    \end{itemize}
     \experienceItem[
     company=Temple University,
     location=Philadelphia{,} PA,
@@ -303,19 +319,19 @@ skills=Linux{,} NumPy{,} Pandas{,} TensorFlow{,} git{,} React.JS{,} Conda{,} Doc
     %     \item Bundled site assets using Webpack to minimize deployment size (Webpack)
     % \end{itemize}
     
-%    \customItem[
-%        title=\href{https://github.com/AshkanArabim/todolist}{To Do List Web App \faExternalLink},
-%        duration=Fall 2022,
-%        % keyHighlight=
-%    ]
-%    \begin{itemize}
-%        \vspace{-0.5em}
-%        \itemsep -6pt {}
-%        \item Developed interactive to-do list web app with local save function through vanilla \textbf{HTML{,} CSS \& JS}.
-%              % \item Developed all internal logic from scratch following OOP principles % (JavaScript)
-%        \item Used Chrome's local storage API for saving user data. % (JavaScript)
-%        \item Followed typical \textbf{git/GitHub} version control workflow during implementation. % (git, GitHub)
-%    \end{itemize}
+    \customItem[
+        title=\href{https://github.com/AshkanArabim/todolist}{To Do List Web App \faExternalLink},
+        duration=Fall 2022,
+        % keyHighlight=
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed interactive to-do list web app with local save function through vanilla \textbf{HTML{,} CSS \& JS}.
+              % \item Developed all internal logic from scratch following OOP principles % (JavaScript)
+        \item Used Chrome's local storage API for saving user data. % (JavaScript)
+        \item Followed typical \textbf{git/GitHub} version control workflow during implementation. % (git, GitHub)
+    \end{itemize}
     
     %     \customItem[
     %     title=\href{https://github.com/AshkanArabim/tic-tac-toe}{Tic Tac Toe Web App \faExternalLink},
@@ -372,7 +388,7 @@ skills=Linux{,} NumPy{,} Pandas{,} TensorFlow{,} git{,} React.JS{,} Conda{,} Doc
     
     \customItem[
     	title=President \& Founder - Free and Open-Source Software Club at UTEP,
-    	duration=Spring 2024 - Present
+    	duration=December 2023 - Present
     ]
     \begin{itemize}
     	\vspace{-0.5em}
@@ -384,7 +400,7 @@ skills=Linux{,} NumPy{,} Pandas{,} TensorFlow{,} git{,} React.JS{,} Conda{,} Doc
         title=Treasurer - Association for Computing Machinery at UTEP,
         %        keyHighlight=Multiple roles{,} including publicity officer \& treasurer,
         % keyHighlight=Promoted side-projects and research by hosting informational and technical workshops to 40+ students each semester.,
-        duration=Fall 2022 - Present
+        duration=August 2022 - January 2024
     ]
     \begin{itemize}
         \vspace{-0.5em}
