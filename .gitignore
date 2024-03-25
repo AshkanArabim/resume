@@ -9,3 +9,5 @@ old/
 *.ini
 *.swp
 specifics/
+(spec)*
+
