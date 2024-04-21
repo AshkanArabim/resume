@@ -90,13 +90,17 @@
     \vspace{-0.3em}
 }
 
-\newkeycommand{\educationItem}[university,college,program,graduation,grade,majorgrade,honors,coursework]{
+\newkeycommand{\educationItem}[
+	university,college,program,graduation,grade,majorgrade,
+%	honors,
+	coursework
+]{
     {\bf \commandkey{program}} \hfill {Graduating \commandkey{graduation}} \\
     {\commandkey{university}} \hfill \ifcommandkey{grade}{GPA: \commandkey{grade}}{} \\
     \ifcommandkey{majorgrade}{\rightline{Major GPA: \commandkey{majorgrade}}}{} \\
     % \ifcommandkey{college}{\commandkey{college}}{} \\
-    \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} \\
-    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{}
+    \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} %\\
+%    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{}
 }
 
 \newcommand{\skills}{

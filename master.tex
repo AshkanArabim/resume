@@ -33,13 +33,23 @@ graduation=05/26,
 grade=3.94,
 majorgrade=4.00,
 program=Bachelor of Science in Computer Science{,} Mathematics Minor,
-coursework=Machine Learning{,} Object-Oriented Programming{,} Data Structures \& Algorithms{,} Discrete Math,
-%{,} Matrix Algebra,
-% Computer Architecture{,} Statistics,
- %{,} Introductory Mechanics, 
-honors=Dean's List since Fall '22 {,} Houston Endowment Scholarship Recipient,
+coursework=
+%Machine Learning{,} 
+Object-Oriented Programming{,} 
+Data Structures \& Algorithms{,} 
+%Discrete Math{,}
+Operating Systems %{,}
+%Digital Systems Design{,}
+%Programming Language Concepts{,}
+%Automata{,}
+%Matrix Algebra{,}
+% Computer Organization{,} 
+%Probability \& Statistics {,}
+ %Introductory Mechanics{,}
+ , 
+%honors=Dean's List since Fall '22 {,} Houston Endowment Scholarship Recipient{,}
 % Undergraduate Fellows{,} 
-% 
+%,
 ]
 }
 
@@ -97,9 +107,9 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
 	\begin{itemize}
 		\vspace{-0.5em}
 		\itemsep -6pt {}
-		\item Contribute to creation of Autistic vs neurotypical speech classifier by testing ways to synthesize train data.
+		\item Contributed to creation of Autistic vs neurotypical speech classifier by testing ways to synthesize training data.
 %		\item Used \textbf{PyTorch} to reconstruct state-of-the-art networks proposed in papers.
-		 \item Developed an \href{https://github.com/AshkanArabim/accent-change-paper-implementation}{\textbf{accent-changer model} \faExternalLink} able to convert foreign English accents to native using \textbf{HuggingFace} pretrained models.
+		 \item Developed an \href{https://github.com/AshkanArabim/accent-change-paper-implementation}{\textbf{accent-changer model} \faExternalLink} able to convert foreign English accents to native using \textbf{HuggingFace} pretrained models through their \textbf{Python} API.
 		\item Implemented a \href{https://github.com/AshkanArabim/neural-style-transfer}{\textbf{neural style-transfer model} \faExternalLink} in \textbf{PyTorch} to learn PyTorch \& explore usage for accent-changing.
 	\end{itemize}
 	
@@ -131,18 +141,18 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
 %		\item Expanded the accessibility of the GNOME Builder IDE by translating it to Persian.
 	\end{itemize}
 
-    \experienceItem[
-        company=AI4ALL,
-        location=Remote,
-        position=Student Coordinator,
-        duration=August {-} December 2023
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Mentored 16 students across 4 project groups in AI4ALL's Apply AI program.
-        \item Helped students understand AI/ML concepts such as loss, backpropagation, CNNs, RNNs, transfer learning, etc.
-    \end{itemize}
+%    \experienceItem[
+%        company=AI4ALL,
+%        location=Remote,
+%        position=Student Coordinator,
+%        duration=August {-} December 2023
+%    ]
+%    \begin{itemize}
+%        \vspace{-0.5em}
+%        \itemsep -6pt {}
+%        \item Mentored 16 students across 4 project groups in AI4ALL's Apply AI program.
+%        \item Helped students understand AI/ML concepts such as loss, backpropagation, CNNs, RNNs, transfer learning, etc.
+%    \end{itemize}
     % \experienceItem[
     %     company=UTEP,
     %     location=El Paso{,} TX,
@@ -155,65 +165,97 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
     %     \item Provided top-tier hardware \& software tech support for 10+ students, staff, and faculty daily.
     %     \item Maintained and updated hardware \& software of 500+ computers through regular checkups.
 %     \end{itemize}
-    \experienceItem[
-    company=UTEP,
-    location=El Paso{,} TX,
-    position=Volunteer Researcher,
-    duration=August {-} October 2023
-    ]
-    \begin{itemize}
-    \vspace{-0.5em}
-    \itemsep -6pt {}
-    \item Contributed to the development of software for training users' weaknesses in spotting Phishing emails.
-    \item Classified emails across 7 phishing attributes 
-%    (e.g. sender\_mismatch, suspicious\_subject) 
-    with 78\% accuracy by developing multi-output NLP classification model.
-%    \item Trained deep transformer model using \textbf{Keras} to classify email cues, such as a sense of urgency.
-    \item Preprocessed and visualized more than 5 datasets using \textbf{Pandas and NLTK} to use as training material for model.
-    \end{itemize}
-    \experienceItem[
-    company=Temple University,
-    location=Philadelphia{,} PA,
-    position=Undergraduate Researcher,
-    duration=June {-} July 2023
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Published
-        \href{https://dl.acm.org/doi/10.1145/3565287.3617613}{\textbf{paper} \faExternalLink} 
-        presented at ACM MobiHoc about using Wi-Fi CSI for hand gesture recognition on smartphones.
-        \item Developed CNN architecture to classify 5 gestures from 4 people in 6 scenarios using \textbf{Keras}. %(TensorFlow, Python, Bash)
-        \item Obtained >90\% classification accuracy by using techniques such as LR Scheduling. %(TensorFlow, Keras)
-%        \item Used \textbf{Bash, Android Debug Bridge, and NumPy} for data extraction and preprocessing.
-              % \item 
-    \end{itemize}
+%    \experienceItem[
+%    company=UTEP,
+%    location=El Paso{,} TX,
+%    position=Volunteer Researcher,
+%    duration=August {-} October 2023
+%    ]
+%    \begin{itemize}
+%    \vspace{-0.5em}
+%    \itemsep -6pt {}
+%    \item Contributed to the development of software for training users' weaknesses in spotting Phishing emails.
+%    \item Classified emails across 7 phishing attributes 
+%%    (e.g. sender\_mismatch, suspicious\_subject) 
+%    with 78\% accuracy by developing multi-output NLP classification model.
+%%    \item Trained deep transformer model using \textbf{Keras} to classify email cues, such as a sense of urgency.
+%    \item Preprocessed and visualized more than 5 datasets using \textbf{Pandas and NLTK} to use as training material for model.
+%    \end{itemize}
+%    \experienceItem[
+%    company=Temple University,
+%    location=Philadelphia{,} PA,
+%    position=Undergraduate Researcher,
+%    duration=June {-} July 2023
+%    ]
+%    \begin{itemize}
+%        \vspace{-0.5em}
+%        \itemsep -6pt {}
+%        \item Published
+%        \href{https://dl.acm.org/doi/10.1145/3565287.3617613}{\textbf{paper} \faExternalLink} 
+%        presented at ACM MobiHoc about using Wi-Fi CSI for hand gesture recognition on smartphones.
+%        \item Developed CNN architecture to classify 5 gestures from 4 people in 6 scenarios using \textbf{Keras}. %(TensorFlow, Python, Bash)
+%        \item Obtained >90\% classification accuracy by using techniques such as LR Scheduling. %(TensorFlow, Keras)
+%%        \item Used \textbf{Bash, Android Debug Bridge, and NumPy} for data extraction and preprocessing.
+%              % \item 
+%    \end{itemize}
 
 \end{workSection}
 
 \begin{workSection}{Projects}
+	
+	\customItem[
+		title=CLI Car Dealership,
+		duration=April 2024,
+		% keyHighlight=
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		\item Wrote an Object-Oriented car dealership software in \textbf{Java}, using inheritance, polymorphism, and interfaces.
+		\item Used Git \& GitHub features such as pull requests, merges, branches, rebasing, and reverting for team collaboration.
+		\item Included operations to buy{,} restock{,} or add cars{,} monitor the revenue of each vehicle type{,} add / remove users, etc.
+	\end{itemize}
+	
+	\customItem[
+		title=\href{https://github.com/AshkanArabim/gtk-timer}{Linux Timer \faExternalLink},
+		duration=January 2024,
+		% keyHighlight=
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		\item Developed a \textbf{Linux} timer application using \textbf{GTK \& Vala}, using an event-driven architecture.
+		\item Implemented functionalities for starting, pausing, resetting, and editing timers, using different GTK4 widgets \& signals.
+	\end{itemize}
+	
+	\customItem[
+		title=\href{https://github.com/AshkanArabim/pong-msp430}{Pong for MSP430 \faExternalLink},
+		duration=November 2023,
+		% keyHighlight=
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		%		\item Implemented smooth graphics using interrupts to avoid graphical bottlenecks.
+		\item Designed and implemented a \textbf{C} Pong game for MSP430, with paddle movement, ball physics, and score tracking.
+		\item Implemented interrupt-driven input handling for buttons, ensuring responsive and accurate gameplay interaction.
+		\item Integrated buzzer audio feedback for game events such as ball-wall collisions and score updates.
+	\end{itemize}
+	
+%   vv not including hacktoberfest 2023 because it was mostly wasted on translation projects...
+	
 %	\customItem[
-%	title=Pong for MSP430,
-%	duration=November 2023,
+%	title=Hacktoberfest 2023,
+%	duration=October 2023,
 %	% keyHighlight=
 %	]
 %	\begin{itemize}
 %		\vspace{-0.5em}
 %		\itemsep -6pt {}
-%		\item Implemented smooth graphics using interrupts to avoid graphical bottlenecks.
+%		\item Contributed to three open-source repositories through bug-fixes and translations.
+%		\item Fixed subtitle cutoff bug in ASCII video player written in \textbf{C} by debugging the subtitle buffer. \href{https://github.com/aidancrowther/ASCIIPlay}{\faExternalLink}
 %	\end{itemize}
-	
-	\customItem[
-	title=Hacktoberfest 2023,
-	duration=October 2023,
-	% keyHighlight=
-	]
-	\begin{itemize}
-		\vspace{-0.5em}
-		\itemsep -6pt {}
-		\item Contributed to three open-source repositories through bug-fixes and translations.
-		\item Fixed subtitle cutoff bug in ASCII video player written in \textbf{C} by debugging the subtitle buffer. \href{https://github.com/aidancrowther/ASCIIPlay}{\faExternalLink}
-	\end{itemize}
+
 	\customItem[
 	title=\href{https://github.com/AshkanArabim/advent-of-code-2022}{Advent of Code 2022 - Annual Programming Challenge \faExternalLink},
 	duration=August 2023,
@@ -342,19 +384,23 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
 %        \item Followed typical \textbf{git/GitHub} version control workflow during implementation. % (git, GitHub)
 %    \end{itemize}
     
-    %     \customItem[
-    %     title=\href{https://github.com/AshkanArabim/tic-tac-toe}{Tic Tac Toe Web App \faExternalLink},
-    %     duration=Fall 2022,
-    %     keyHighlight=Minimal Tic-Tac-Toe game with human-human{,} human-bot{,} and bot-bot game-modes.
-    %     ]
-    %     \begin{itemize}
-    %         \vspace{-0.5em}
-    %         \itemsep -6pt {}
-    %         % \item Implemented smooth animations using CSS keyframes to improve site nativation. (CSS)
-    %         \item Utilized CSS glow{,} shading{,} and animations for a modern and sleek look. (HTML, CSS)
-    %         \item Followed OOP principles to track game progress. (JavaScript)
-    %         \item Used typical git/GitHub workflow during implementation (git, GitHub)
-    %     \end{itemize}
+         \customItem[
+         title=\href{https://github.com/AshkanArabim/tic-tac-toe}{Tic Tac Toe Web App \faExternalLink},
+         duration=Fall 2022,
+%         keyHighlight=Minimal Tic-Tac-Toe game with human-human{,} human-bot{,} and bot-bot game-modes.
+         ]
+         \begin{itemize}
+             \vspace{-0.5em}
+             \itemsep -6pt {}
+             % \item Implemented smooth animations using CSS keyframes to improve site nativation. (CSS)
+%             \item Utilized CSS glow{,} shading{,} and animations for a modern and sleek look. (HTML, CSS)
+%             \item Followed OOP principles to track game progress. (JavaScript)
+%             \item Used typical git/GitHub workflow during implementation (git, GitHub)
+%             ------------------------------ OLD BULLETS, DON'T USE ^^ ---------------------------------------------
+             \item Developed a tic-tac-toe game using \textbf{HTML, CSS, and JavaScript}, with a special focus on the visuals.
+             \item Used JavaScript to manage game state, handle player moves, and determine game outcomes.
+             \item Utilized CSS glow{,} shading{,} and animations for a Neumorphist UI style.
+         \end{itemize}
 
 %    \customItem[
 %        title=\href{https://github.com/AshkanArabim/blabber}{Blabber {-} a CLI Twitter replica \faExternalLink},
