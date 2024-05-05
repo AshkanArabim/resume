@@ -55,17 +55,29 @@ Operating Systems %{,}
 
 \skills{
 \skillItem[
-category=Programming / Markup Languages,
-skills=Python{,} Vala{,} HTML/CSS{,} JavaScript{,} Java{,} UML{,} Bash{,} Haskell{,} 
-LaTeX{,}  C%{,}
+%category=Programming / Markup Languages,
+category=Languages,
+%Python: bee using heavily since Jan 2022
+%Vala: since December 2023
+%HTML/CSS: heavily since Jan 2022
+%JS: Heavily since May 2022
+%Java: since August 2022
+%Bash: heavily since June 2023
+%Haskell: used in PL, Jan - April 2024
+%LaTeX: heavily in June
+%C: heavily in Org / Hacktoberfest, August - December 2023
+skills=Python(advanced){,} Java(advanced){,} Vala(mid){,} HTML/CSS(mid){,} JavaScript(mid){,} UML(mid){,} Bash(mid){,} Haskell(mid){,} 
+LaTeX(novice){,}  C++(novice) %{,}
+% C % to be fair, I used C++ more in-depth than C. plus, it looks more dope
 %PHP{,} 
 ]
-% C++{,}
 \\
 \skillItem[
-category=Frameworks \& Software,
+category=Tools,
 % for data science / ML:
-skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.JS{,} Conda{,} Docker
+skills=Linux(advanced){,} Git(advanced){,} GTK(mid){,}  PyTorch(mid){,} TensorFlow(mid){,} NumPy(mid){,} Pandas(mid)
+% React.JS(novice) % nobody except web devs cares about react
+% Conda{,}
 % Microsoft Office,
 %Docker{,} 
 % Other stuff:
@@ -75,11 +87,11 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
 % DON'T INCLUDE:
 % Node.JS, Webpack
 ]
-\\
-\skillItem[
-    category=Certifications,
-    skills=Coursera Deep Learning Specialization {-} October 2023
-]
+%\\
+%\skillItem[
+%    category=Certifications,
+%    skills=Coursera Deep Learning Specialization {-} October 2023
+%]
 % \\
 % \skillItem[
 %     category=Foreign Languages,
@@ -184,23 +196,24 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
 %%    \item Trained deep transformer model using \textbf{Keras} to classify email cues, such as a sense of urgency.
 %    \item Preprocessed and visualized more than 5 datasets using \textbf{Pandas and NLTK} to use as training material for model.
 %    \end{itemize}
-%    \experienceItem[
-%    company=Temple University,
-%    location=Philadelphia{,} PA,
-%    position=Undergraduate Researcher,
-%    duration=June {-} July 2023
-%    ]
-%    \begin{itemize}
-%        \vspace{-0.5em}
-%        \itemsep -6pt {}
-%        \item Published
-%        \href{https://dl.acm.org/doi/10.1145/3565287.3617613}{\textbf{paper} \faExternalLink} 
-%        presented at ACM MobiHoc about using Wi-Fi CSI for hand gesture recognition on smartphones.
-%        \item Developed CNN architecture to classify 5 gestures from 4 people in 6 scenarios using \textbf{Keras}. %(TensorFlow, Python, Bash)
-%        \item Obtained >90\% classification accuracy by using techniques such as LR Scheduling. %(TensorFlow, Keras)
-%%        \item Used \textbf{Bash, Android Debug Bridge, and NumPy} for data extraction and preprocessing.
-%              % \item 
-%    \end{itemize}
+    \experienceItem[
+    company=Temple University,
+    location=Philadelphia{,} PA,
+    position=Undergraduate Research Intern,
+    duration=June {-} July 2023
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Published
+        \href{https://dl.acm.org/doi/10.1145/3565287.3617613}{\textbf{paper} \faExternalLink} 
+        presented at ACM MobiHoc about using Wi-Fi CSI for hand gesture recognition on smartphones.
+        \item Developed CNN architecture to classify 5 gestures from 4 people in 6 scenarios using \textbf{Keras}. %(TensorFlow, Python, Bash)
+        \item Obtained >90\% classification accuracy by using techniques such as LR Scheduling.
+        \item 1st place for the best REU site final presentation. %(TensorFlow, Keras)
+%        \item Used \textbf{Bash, Android Debug Bridge, and NumPy} for data extraction and preprocessing.
+              % \item 
+    \end{itemize}
 
 \end{workSection}
 
@@ -217,7 +230,7 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
 %		\item Wrote an Object-Oriented car dealership software in \textbf{Java}, using inheritance, polymorphism, and interfaces.
 		\item Wrote an Object-Oriented car dealership software in \textbf{Java} following MVC architecture, with 2300+ lines of code.
 		\item Used Git \& GitHub features such as pull requests, merges, branches, and rebasing for collaborating in team of 3.
-		\item Included operations to buy{,} restock{,} or add cars{,} monitor the revenue of each vehicle type{,} add / remove users, etc.
+%		\item Included operations to buy{,} restock{,} or add cars{,} monitor the revenue of each vehicle type{,} add / remove users, etc.
 %		\item Included automatic
 	\end{itemize}
 	
@@ -262,17 +275,17 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
 %		\item Fixed subtitle cutoff bug in ASCII video player written in \textbf{C} by debugging the subtitle buffer. \href{https://github.com/aidancrowther/ASCIIPlay}{\faExternalLink}
 %	\end{itemize}
 
-	\customItem[
-	title=\href{https://github.com/AshkanArabim/advent-of-code-2022}{Advent of Code 2022 - Annual Programming Challenge \faExternalLink},
-	duration=August 2023,
-	% keyHighlight=
-	]
-	\begin{itemize}
-		\vspace{-0.5em}
-		\itemsep -6pt {}
-		\item Coded \textbf{C++} solutions to 12 of 25 challenge questions using backtracking, and graph traversal algorithms, and more.
-		\item Used classes, queues, vectors, and streams to efficiently calculate results based on given inputs.
-	\end{itemize}
+%	\customItem[
+%	title=\href{https://github.com/AshkanArabim/advent-of-code-2022}{Advent of Code 2022 - Annual Programming Challenge \faExternalLink},
+%	duration=August 2023,
+%	% keyHighlight=
+%	]
+%	\begin{itemize}
+%		\vspace{-0.5em}
+%		\itemsep -6pt {}
+%		\item Coded \textbf{C++} solutions to 12 of 25 challenge questions using backtracking, and graph traversal algorithms, and more.
+%		\item Used classes, queues, vectors, and streams to efficiently calculate results based on given inputs.
+%	\end{itemize}
     % \customItem[
     %     title=\href{https://github.com/AshkanArabim/email-classifier}{Adaptive Phishing Email Training System \faExternalLink},
     %     duration=August 2023 - Present,
@@ -294,6 +307,13 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
     %     \itemsep -6pt {}
     %     \item Led team of 3 to meet project deadlines by dividing tasks based on skill level (Project Management)
     %     \item Designed, tested, and implemented CNN model for classification (TensorFlow, Numpy, Conda)
+    % % in case you need more:
+    %% original linkedin title: AI4ALL College Pathways Participant
+    % %- Led team of 3 to meet project deadlines by dividing tasks based on skill level.
+    %%- Developed convolutional model to classify music genres based on their Mel spectrogram.
+    %% - Learned about the applications and fundamental technical concepts of AI including the types of machine learning techniques and neural networks. 
+    %% - Investigated ethical implications related to data processing and AI implementation 
+    %% - Collaborated with peers on a project to preditct sudents' academic performance in college based on their background.
     % \end{itemize}
 
 
@@ -405,7 +425,7 @@ skills=Linux{,} git{,} GTK{,} NumPy{,} Pandas{,} PyTorch{,} TensorFlow{,} React.
 %             ------------------------------ OLD BULLETS, DON'T USE ^^ ---------------------------------------------
              \item Developed a tic-tac-toe game using \textbf{HTML, CSS, and JavaScript}, with a special focus on the visuals.
              \item Used JavaScript to manage game state, handle player moves, and determine game outcomes.
-             \item Utilized CSS glow{,} shading{,} and animations for a Neumorphist UI style.
+%             \item Utilized CSS glow{,} shading{,} and animations for a Neumorphist UI style.
          \end{itemize}
 
 %    \customItem[
