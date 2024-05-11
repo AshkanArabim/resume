@@ -6,7 +6,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2023/03/18 v0.1 Resume class]
 
-\LoadClass[11pt,letterpaper]{article} % Font size and paper type
+\LoadClass[10pt,letterpaper]{article} % Font size and paper type
 
 % set document margins
 \usepackage[left=0.4in,top=0.3in,right=0.4in,bottom=0.3in]{geometry}
