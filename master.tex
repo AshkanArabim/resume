@@ -67,7 +67,7 @@ category=Languages,
 %LaTeX: heavily in June
 %C: heavily in Org / Hacktoberfest, August - December 2023
 skills=Python(advanced){,} Java(advanced){,} Vala(mid){,} HTML/CSS(mid){,} JavaScript(mid){,} UML(mid){,} Bash(mid){,} Haskell(mid){,} 
-LaTeX(novice){,}  C++(novice) {,} C(novice)
+LaTeX(novice){,}  C++(novice) {,} C(novice){,} SQL(novice)
 % to be fair, I used C++ more in-depth than C. plus, it looks more dope
 %PHP{,} 
 ]
@@ -126,7 +126,8 @@ skills=Linux(advanced){,} Git(advanced){,} GTK(mid){,}  PyTorch(mid){,} TensorFl
 %		\item Used \textbf{PyTorch} to reconstruct state-of-the-art networks proposed in papers.
 		 \item Developed an \href{https://github.com/AshkanArabim/accent-change-paper-implementation}{\textbf{accent-changer model} \faExternalLink} able to convert foreign English accents to native using \textbf{HuggingFace} pretrained models through their \textbf{Python} API.
 		\item Implemented a \href{https://github.com/AshkanArabim/neural-style-transfer}{\textbf{neural style-transfer model} \faExternalLink} in \textbf{PyTorch} to learn PyTorch \& explore usage for accent-changing.
-		\item Used Python's multiprocessing library to parallelize CPU-intensive experiments.
+%		\item Used Python's multiprocessing library to parallelize CPU-intensive experiments.
+       \item Reduced evaluation script runtime from 24+ hours to 10 minutes by rewriting looped tasks as higher-dimension tensor operations.
 	\end{itemize}
 	
 %	\experienceItem[
@@ -153,7 +154,7 @@ skills=Linux(advanced){,} Git(advanced){,} GTK(mid){,}  PyTorch(mid){,} TensorFl
 %		\item Improved the GNOME Clocks user experience by fixing various reported bugs.
 		\item Modernized GNOME Clocks' UI to add features such as full-screen timers and timer editing. (in progress)
 		\item Fixed GNOME Clocks timers not progressing during system suspend by revising timer logic. (merged)
-		\item Added functionality to world clock to show country and state in case two cities have the same name. (open)
+		\item Added functionality to world clock to show country and state when two cities have the same name. (open)
 		\item Translated the GNOME Builder IDE to Persian.
 %		\item Expanded the accessibility of the GNOME Builder IDE by translating it to Persian.
 	\end{itemize}
@@ -222,6 +223,17 @@ skills=Linux(advanced){,} Git(advanced){,} GTK(mid){,}  PyTorch(mid){,} TensorFl
 \begin{workSection}{Projects}
 	
 	\customItem[
+		title=\href{https://github.com/AshkanArabim/pwaang-extended}{PWAANG - a board game written in Haskell \faExternalLink},
+		duration=May 2024,
+		% keyHighlight=
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		\item Implemented a board game entirely in \textbf{Haskell}, using monads, pattern matching, and recursion.
+	\end{itemize}
+	
+	\customItem[
 		title=CLI Car Dealership,
 		duration=April 2024,
 		% keyHighlight=
@@ -277,17 +289,17 @@ skills=Linux(advanced){,} Git(advanced){,} GTK(mid){,}  PyTorch(mid){,} TensorFl
 %		\item Fixed subtitle cutoff bug in ASCII video player written in \textbf{C} by debugging the subtitle buffer. \href{https://github.com/aidancrowther/ASCIIPlay}{\faExternalLink}
 %	\end{itemize}
 
-	\customItem[
-	title=\href{https://github.com/AshkanArabim/advent-of-code-2022}{Advent of Code 2022 - Annual Programming Challenge \faExternalLink},
-	duration=August 2023,
-	% keyHighlight=
-	]
-	\begin{itemize}
-		\vspace{-0.5em}
-		\itemsep -6pt {}
-		\item Coded \textbf{C++} solutions to 12 of 25 challenge questions using backtracking, graph traversal algorithms, and more.
-		\item Used classes, queues, vectors, and streams to efficiently calculate results based on given inputs.
-	\end{itemize}
+%	\customItem[
+%	title=\href{https://github.com/AshkanArabim/advent-of-code-2022}{Advent of Code 2022 - Annual Programming Challenge \faExternalLink},
+%	duration=August 2023,
+%	% keyHighlight=
+%	]
+%	\begin{itemize}
+%		\vspace{-0.5em}
+%		\itemsep -6pt {}
+%		\item Coded \textbf{C++} solutions to 12 of 25 challenge questions using backtracking, graph traversal algorithms, and more.
+%		\item Used classes, queues, vectors, and streams to efficiently calculate results based on given inputs.
+%	\end{itemize}
     % \customItem[
     %     title=\href{https://github.com/AshkanArabim/email-classifier}{Adaptive Phishing Email Training System \faExternalLink},
     %     duration=August 2023 - Present,
