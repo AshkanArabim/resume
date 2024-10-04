@@ -91,15 +91,19 @@
 }
 
 \newkeycommand{\educationItem}[
-	university,college,program,graduation,grade,majorgrade,
+	university,college,program,graduation,
+    % grade,
+    majorgrade,
 %	honors,
-	coursework
+	% coursework
 ]{
     {\bf \commandkey{program}} \hfill {Graduating \commandkey{graduation}} \\
-    {\commandkey{university}} \hfill \ifcommandkey{grade}{GPA: \commandkey{grade}}{} \\
-    \ifcommandkey{majorgrade}{\rightline{Major GPA: \commandkey{majorgrade}}}{} \\
+    % {\commandkey{university}} \hfill \ifcommandkey{grade}{GPA: \commandkey{grade}}{} \\
+    {\commandkey{university}} \hfill \ifcommandkey{majorgrade}{Major GPA: \commandkey{majorgrade}}{} \\
+    % \ifcommandkey{majorgrade}{\rightline{Major GPA: \commandkey{majorgrade}}}{} % \\
+    \vspace{-15pt} % ugly hack to get rid of the newline created by "\rightline"
     % \ifcommandkey{college}{\commandkey{college}}{} \\
-    \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} %\\
+    % \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} %\\
 %    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{}
 }
 
