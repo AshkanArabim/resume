@@ -33,26 +33,28 @@ university=The University of Texas at El Paso,
 graduation=May 2026,
 % grade=3.95,
 majorgrade=4.00,
-program=Bachelor of Science in Computer Science{,} Minor in Mathematics % ,
-% coursework=
-% %Parallel Computing{,} 
-% Databases{,} 
-% %Machine Learning{,} 
-% Object-Oriented Programming{,} 
+program=Bachelor of Science in Computer Science{,} Minor in Mathematics ,
+coursework=
+%Parallel Computing{,} 
+Calculus I \& II{,}
+Databases{,} 
+% Relational Databases{,} 
+Machine Learning{,} 
+Object-Oriented Programming{,} 
 % Data Structures and Algorithms{,} 
-% %Discrete Math{,}
+%Discrete Math{,}
 % Operating Systems%{,}
-% %Digital Systems Design{,}
-% %Programming Language Concepts{,}
-% %Automata{,}
-% %Matrix Algebra %{,}
-% % Computer Organization{,} 
-% %Probability \& Statistics {,}
-%  %Introductory Mechanics{,}
-%  , 
-% %honors=Dean's List since Fall '22 {,} Houston Endowment Scholarship Recipient{,}
-% % Undergraduate Fellows{,} 
-% %,
+%Digital Systems Design{,}
+%Programming Language Concepts{,}
+%Automata{,}
+%Matrix Algebra %{,}
+% Computer Organization{,} 
+%Probability \& Statistics {,}
+%Introductory Mechanics{,}
+, 
+%honors=Dean's List since Fall '22 {,} Houston Endowment Scholarship Recipient{,}
+% Undergraduate Fellows{,} 
+%,
 ]
 }
 
@@ -109,8 +111,8 @@ program=Bachelor of Science in Computer Science{,} Minor in Mathematics % ,
 	\item Authored functionality for world clock to show country and state when two cities have the same name. % (open)
 	%		\item Translated the GNOME Builder IDE to Persian. % <<- they seriously don't care. only use if you have space
 	%		\item Expanded the accessibility of the GNOME Builder IDE by translating it to Persian.
-	% \item Merged \textbf{2} pull requests that passed the CI pipeline and were deployed to production. % 
-	\item Merged \textbf{2} pull requests that were deployed to production. % 
+	\item Merged \textbf{2} pull requests that passed the CI/CD pipeline and were deployed to production. % 
+	% \item Merged \textbf{2} pull requests that were deployed to production. % 
 	\end{itemize}
 	
 	\experienceItem[
@@ -177,22 +179,24 @@ program=Bachelor of Science in Computer Science{,} Minor in Mathematics % ,
     %     \item Provided top-tier hardware \& software tech support for 10+ students, staff, and faculty daily.
     %     \item Maintained and updated hardware \& software of 500+ computers through regular checkups.
 %     \end{itemize}
-   \experienceItem[
-   company=UTEP,
-   location=El Paso{,} TX,
-   position=Volunteer Researcher,
-   duration=August 2023 {-} October 2023
-   ]
-   \begin{itemize}
-   \vspace{-0.5em}
-   \itemsep -6pt {}
-   \item Contributed to the development of software for training users' weaknesses in spotting Phishing emails.
-   \item Classified emails across 7 phishing attributes 
-%    (e.g. sender\_mismatch, suspicious\_subject) 
-   with \textbf{78\%} accuracy by developing multi-output NLP classification model.
-%    \item Trained deep transformer model using \textbf{Keras} to classify email cues, such as a sense of urgency.
-   \item Preprocessed and visualized more than 5 datasets using \textbf{Python} and \textbf{NLTK} to use as training material for model.
-   \end{itemize}
+
+	% \experienceItem[
+	% company=UTEP,
+	% location=El Paso{,} TX,
+	% position=Volunteer Researcher,
+	% duration=August 2023 {-} October 2023
+	% ]
+	% \begin{itemize}
+	% \vspace{-0.5em}
+	% \itemsep -6pt {}
+	% \item Contributed to the development of software for training users' weaknesses in spotting Phishing emails.
+	% \item Classified emails across 7 phishing attributes 
+	% %    (e.g. sender\_mismatch, suspicious\_subject) 
+	% with \textbf{78\%} accuracy by developing multi-output NLP classification model.
+	% %    \item Trained deep transformer model using \textbf{Keras} to classify email cues, such as a sense of urgency.
+	% \item Preprocessed and visualized more than 5 datasets using \textbf{Python} and \textbf{NLTK} to use as training material for model.
+	% \end{itemize}
+
     \experienceItem[
     company=Temple University,
     location=Philadelphia{,} PA,
@@ -286,6 +290,21 @@ program=Bachelor of Science in Computer Science{,} Minor in Mathematics % ,
 		%		\item Implemented a board game entirely in \textbf{Haskell}, using monads, pattern matching, and recursion.
 %		\item Implemented a board game in \textbf{Haskell} (functional programming language) using monads, pattern matching, and recursion.
 		\item Implemented a full-fledged board game in \textbf{Haskell}, pushing myself to learn functional programming.
+	\end{itemize}
+
+	\customItem[
+		title=Bloomberg Tech Lab on Campus,
+		duration=Team of 2 | April 2024,
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		\item \textbf{One of 40} students selected to collaborate with Bloomberg engineers 
+		% in a small group setting 
+		to build stock data processing application. % (official)
+		% \item Utilized \textbf{Python} to design and implement a robust message queue system using \textbf{RabbitMQ}, enhancing real-time data processing and communication between producer and consumer components. % (official)
+		\item Designed and implemented a queued messaging system using \textbf{RabbitMQ} for real-time data stream processing.
+		% \item Developed a deeper understanding of core Python/CS concepts (Classes, Inheritance, OOP), as well as financial domain knowledge (Tickers, Industry Sectors). % (official)
 	\end{itemize}
 	
 %	\customItem[
@@ -635,6 +654,7 @@ program=Bachelor of Science in Computer Science{,} Minor in Mathematics % ,
 	Node.JS(mid){,} 
 	PostgreSQL(mid){,} 
 	MySQL(mid){,} 
+	RabbitMQ(novice){,} 
 	% Make(novice){,} 
 	% AWS(novice){,} % plan B
 	% Vue.JS(novice){,} % plan B
