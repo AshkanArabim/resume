@@ -8,4 +8,4 @@ This is where I host my constantly updating resume. Everything is written in LaT
 - Or if you want to see my complete CV, you can uncomment everything and compile the tex file.
 
 ## Acknowledgement:
-The original template was written by [@vgnshiyer](https://github.com/vgnshiyer). Gotta say, I'm a huge fan!
+The [original template](https://github.com/vgnshiyer/ASU-sparkysundevil-resume-template) was written by [@vgnshiyer](https://github.com/vgnshiyer). Gotta say, I'm a huge fan!
