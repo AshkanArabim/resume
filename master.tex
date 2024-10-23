@@ -34,27 +34,27 @@ graduation=May 2026,
 % grade=3.95,
 majorgrade=4.00,
 program=Bachelor of Science in Computer Science{,} Minor in Mathematics ,
-coursework=
-%Parallel Computing{,} 
-Calculus I \& II{,}
-Databases{,} 
-% Relational Databases{,} 
-Machine Learning{,} 
-Object-Oriented Programming{,} 
-% Data Structures and Algorithms{,} 
-%Discrete Math{,}
-% Operating Systems%{,}
-%Digital Systems Design{,}
-%Programming Language Concepts{,}
-%Automata{,}
-%Matrix Algebra %{,}
-% Computer Organization{,} 
-%Probability \& Statistics {,}
-%Introductory Mechanics{,}
-, 
-%honors=Dean's List since Fall '22 {,} Houston Endowment Scholarship Recipient{,}
-% Undergraduate Fellows{,} 
-%,
+% coursework=
+% %Parallel Computing{,} 
+% Calculus I \& II{,}
+% Databases{,} 
+% % Relational Databases{,} 
+% Machine Learning{,} 
+% Object-Oriented Programming{,} 
+% % Data Structures and Algorithms{,} 
+% %Discrete Math{,}
+% % Operating Systems%{,}
+% %Digital Systems Design{,}
+% %Programming Language Concepts{,}
+% %Automata{,}
+% %Matrix Algebra %{,}
+% % Computer Organization{,} 
+% %Probability \& Statistics {,}
+% %Introductory Mechanics{,}
+% , 
+% %honors=Dean's List since Fall '22 {,} Houston Endowment Scholarship Recipient{,}
+% % Undergraduate Fellows{,} 
+% %,
 ]
 }
 
@@ -64,12 +64,12 @@ Object-Oriented Programming{,}
 
 \begin{workSection}{Experience}
 	
-	\experienceItem[
-	company=Capital One,
-	location=McLean{,} VA,
-	position=Incoming Software Engineering Intern,
-	duration= June 2025 - August 2025,
-	]
+	% \experienceItem[
+	% company=Capital One,
+	% location=McLean{,} VA,
+	% position=Incoming Software Engineering Intern,
+	% duration= June 2025 - August 2025,
+	% ]
 	
 	\experienceItem[
 	company=Texas Instruments,
@@ -80,13 +80,16 @@ Object-Oriented Programming{,}
 	\begin{itemize}
 	\vspace{-0.5em}
 	\itemsep -6pt {}
-	%		\item Maintained automation software for chip fabrication operations.
-	%		\item Developed scripts for carrier robots in AutoShell (proprietary scripting language) to use in chip fabrication.
-	%		\item Set up infrastructure for manufacturing automation by configuring and deploying Docker containers.
-	\item Set up infrastructure for \textbf{fab transporter robots} by configuring \textbf{Docker} containers on \textbf{Linux} servers.
-	\item Ensured system reliability through unit and integration testing with Insomnia.
-	\item Coordinated with \textbf{10+} sysadmins \& stakeholders to configure Oracle \textbf{SQL} databases and internal \textbf{APIs}.
-	%		\item Created Oracle SQL tables and views feeding 
+		% \item Maintained automation software for chip fabrication operations.
+		% \item Developed scripts for carrier robots in AutoShell (proprietary scripting language) to use in chip fabrication.
+		% \item Set up infrastructure for manufacturing automation by configuring and deploying \textbf{Docker} containers.
+		\item Set up infrastructure for \textbf{robotic automation} for chip manufacturing by deploying \textbf{Docker} containers on \textbf{Linux} servers.
+		% \item Set up infrastructure for \textbf{fab transporter robots} by configuring \textbf{Docker} containers on \textbf{Linux} servers.
+		% \item Ensured system reliability through unit and integration testing with Insomnia.
+		\item Ensured system reliability through unit and integration testing with Insomnia before final deployment.
+		% \item Coordinated with \textbf{10+} sysadmins \& stakeholders to configure Oracle \textbf{SQL} databases and internal \textbf{APIs}.
+		\item Coordinated with \textbf{10+} stakeholders to configure \textbf{Oracle SQL} databases, \textbf{REST APIs}, and documentation.
+		% \item Created Oracle SQL tables and views feeding 
 	\end{itemize}
 	
 	\experienceItem[
@@ -111,8 +114,8 @@ Object-Oriented Programming{,}
 	\item Authored functionality for world clock to show country and state when two cities have the same name. % (open)
 	%		\item Translated the GNOME Builder IDE to Persian. % <<- they seriously don't care. only use if you have space
 	%		\item Expanded the accessibility of the GNOME Builder IDE by translating it to Persian.
-	\item Merged \textbf{2} pull requests that passed the CI/CD pipeline and were deployed to production. % 
-	% \item Merged \textbf{2} pull requests that were deployed to production. % 
+	% \item Merged \textbf{2} pull requests that passed the CI/CD pipeline and were deployed to production. % 
+	\item Merged \textbf{2} pull requests that were deployed to production. % 
 	\end{itemize}
 	
 	\experienceItem[
@@ -180,22 +183,23 @@ Object-Oriented Programming{,}
     %     \item Maintained and updated hardware \& software of 500+ computers through regular checkups.
 %     \end{itemize}
 
-	% \experienceItem[
-	% company=UTEP,
-	% location=El Paso{,} TX,
-	% position=Volunteer Researcher,
-	% duration=August 2023 {-} October 2023
-	% ]
-	% \begin{itemize}
-	% \vspace{-0.5em}
-	% \itemsep -6pt {}
-	% \item Contributed to the development of software for training users' weaknesses in spotting Phishing emails.
+	\experienceItem[
+	company=UTEP,
+	location=El Paso{,} TX,
+	position=Volunteer Researcher,
+	duration=August 2023 {-} October 2023
+	]
+	\begin{itemize}
+	\vspace{-0.5em}
+	\itemsep -6pt {}
+	\item Contributed to the development of software for training users' weaknesses in spotting Phishing emails.
 	% \item Classified emails across 7 phishing attributes 
-	% %    (e.g. sender\_mismatch, suspicious\_subject) 
+	% % (e.g. sender\_mismatch, suspicious\_subject) 
 	% with \textbf{78\%} accuracy by developing multi-output NLP classification model.
-	% %    \item Trained deep transformer model using \textbf{Keras} to classify email cues, such as a sense of urgency.
-	% \item Preprocessed and visualized more than 5 datasets using \textbf{Python} and \textbf{NLTK} to use as training material for model.
-	% \end{itemize}
+	\item Classified emails across \textbf{7} phishing attributes with \textbf{78\%} accuracy by designing \textbf{TensorFlow} NLP machine learning model.
+	% \item Trained deep transformer model using \textbf{Keras} to classify email cues, such as a sense of urgency.
+	\item Preprocessed and visualized more than 5 datasets using \textbf{Python} and \textbf{NLTK} to use as training material for model.
+	\end{itemize}
 
     \experienceItem[
     company=Temple University,
@@ -224,7 +228,7 @@ Object-Oriented Programming{,}
 
 \end{workSection}
 
-\begin{workSection}{Projects}
+\begin{workSection}{Side Projects}
 	\customItem[
 	title=\href{https://github.com/AshkanArabim/news-briefer}{News Bridge (BorderHack 2024 submission) \faExternalLink},
 	duration=Team of 4 | September 2024,
@@ -279,33 +283,33 @@ Object-Oriented Programming{,}
 		\item Added Markdown support with \textbf{Gatsby}, utilizing \textbf{GraphQL} to fetch blog entries.
 	\end{itemize}
 	
-	\customItem[
-		title=\href{https://github.com/AshkanArabim/pwaang-extended}{PWAANG - a board game written in Haskell \faExternalLink},
-		duration=Solo | May 2024,
-		% keyHighlight=
-	]
-	\begin{itemize}
-		\vspace{-0.5em}
-		\itemsep -6pt {}
-		%		\item Implemented a board game entirely in \textbf{Haskell}, using monads, pattern matching, and recursion.
-%		\item Implemented a board game in \textbf{Haskell} (functional programming language) using monads, pattern matching, and recursion.
-		\item Implemented a full-fledged board game in \textbf{Haskell}, pushing myself to learn functional programming.
-	\end{itemize}
+% 	\customItem[
+% 		title=\href{https://github.com/AshkanArabim/pwaang-extended}{PWAANG - a board game written in Haskell \faExternalLink},
+% 		duration=Solo | May 2024,
+% 		% keyHighlight=
+% 	]
+% 	\begin{itemize}
+% 		\vspace{-0.5em}
+% 		\itemsep -6pt {}
+% 		%		\item Implemented a board game entirely in \textbf{Haskell}, using monads, pattern matching, and recursion.
+% %		\item Implemented a board game in \textbf{Haskell} (functional programming language) using monads, pattern matching, and recursion.
+% 		\item Implemented a full-fledged board game in \textbf{Haskell}, pushing myself to learn functional programming.
+% 	\end{itemize}
 
-	\customItem[
-		title=Bloomberg Tech Lab on Campus,
-		duration=Team of 2 | April 2024,
-	]
-	\begin{itemize}
-		\vspace{-0.5em}
-		\itemsep -6pt {}
-		\item \textbf{One of 40} students selected to collaborate with Bloomberg engineers 
-		% in a small group setting 
-		to build stock data processing application. % (official)
-		% \item Utilized \textbf{Python} to design and implement a robust message queue system using \textbf{RabbitMQ}, enhancing real-time data processing and communication between producer and consumer components. % (official)
-		\item Designed and implemented a queued messaging system using \textbf{RabbitMQ} for real-time data stream processing.
-		% \item Developed a deeper understanding of core Python/CS concepts (Classes, Inheritance, OOP), as well as financial domain knowledge (Tickers, Industry Sectors). % (official)
-	\end{itemize}
+	% \customItem[
+	% 	title=Bloomberg Tech Lab on Campus,
+	% 	duration=Team of 2 | April 2024,
+	% ]
+	% \begin{itemize}
+	% 	\vspace{-0.5em}
+	% 	\itemsep -6pt {}
+	% 	\item \textbf{One of 40} students selected to collaborate with Bloomberg engineers 
+	% 	% in a small group setting 
+	% 	to build stock data processing application. % (official)
+	% 	% \item Utilized \textbf{Python} to design and implement a robust message queue system using \textbf{RabbitMQ}, enhancing real-time data processing and communication between producer and consumer components. % (official)
+	% 	\item Designed and implemented a queued messaging system using \textbf{RabbitMQ} for real-time data stream processing.
+	% 	% \item Developed a deeper understanding of core Python/CS concepts (Classes, Inheritance, OOP), as well as financial domain knowledge (Tickers, Industry Sectors). % (official)
+	% \end{itemize}
 	
 %	\customItem[
 %		title=\href{https://github.com/AshkanArabim/bombshell}{Bombshell - Unix shell written in Python \faExternalLink},
@@ -318,23 +322,23 @@ Object-Oriented Programming{,}
 %		\item Added features like pipes, redirection, and background tasks by using multi-threading and semaphores, ensuring concurrency.
 %	\end{itemize}
 	
-%	\customItem[
-%		title=\href{https://github.com/AshkanArabim/OOP-project-1}{CLI Car Dealership \faExternalLink},
-%		duration=April 2024,
-%		% keyHighlight=
-%	]
-%	\begin{itemize}
-%		\vspace{-0.5em}
-%		\itemsep -6pt {}
-%%		\item Wrote an Object-Oriented car dealership software in \textbf{Java}, using inheritance, polymorphism, and interfaces.
-%		\item Wrote an Object-Oriented car dealership software in \textbf{Java} following MVC architecture \& OOP design patterns. % with 2300+ lines of code.
-%		\item Used Git \& GitHub features such as pull requests, merges and branches to work in team of 3.
-%%		\item Used Git \& GitHub features such as pull requests, merges, branches, and rebasing for teamwork in group of 3.
-%%		\item Drafted overall software design in UML use-case and class diagrams.
-%%		\item Followed Agile methodology to design, plan, and develop three phases of feature additions.
-%%		\item Included operations to buy{,} restock{,} or add cars{,} monitor the revenue of each vehicle type{,} add / remove users, etc.
-%%		\item Included automatic
-%	\end{itemize}
+% 	\customItem[
+% 		title=\href{https://github.com/AshkanArabim/OOP-project-1}{CLI Car Dealership \faExternalLink},
+% 		duration=Team of 3 | April 2024,
+% 		% keyHighlight=
+% 	]
+% 	\begin{itemize}
+% 		\vspace{-0.5em}
+% 		\itemsep -6pt {}
+% %		\item Wrote an Object-Oriented car dealership software in \textbf{Java}, using inheritance, polymorphism, and interfaces.
+% 		\item Wrote an Object-Oriented car dealership software in \textbf{Java} following MVC architecture \& object oriented design patterns. % with 2300+ lines of code.
+% 		\item Used Git \& GitHub features such as pull requests, merges and branches to work in team of 3.
+% %		\item Used Git \& GitHub features such as pull requests, merges, branches, and rebasing for teamwork in group of 3.
+% %		\item Drafted overall software design in UML use-case and class diagrams.
+% %		\item Followed Agile methodology to design, plan, and develop three phases of feature additions.
+% %		\item Included operations to buy{,} restock{,} or add cars{,} monitor the revenue of each vehicle type{,} add / remove users, etc.
+% %		\item Included automatic
+% 	\end{itemize}
 	
 %	\customItem[
 %		title=\href{https://github.com/AshkanArabim/gtk-timer}{Linux Timer \faExternalLink},
@@ -348,20 +352,20 @@ Object-Oriented Programming{,}
 %		\item Implemented functionalities for starting, pausing, resetting, and editing timers, using different GTK4 widgets \& signals.
 %	\end{itemize}
 	
-%	\customItem[
-%		title=\href{https://github.com/AshkanArabim/pong-msp430}{Pong for MSP430 \faExternalLink},
-%		duration=November 2023,
-%		% keyHighlight=
-%	]
-%	\begin{itemize}
-%		\vspace{-0.5em}
-%		\itemsep -6pt {}
-%		%		\item Implemented smooth graphics using interrupts to avoid graphical bottlenecks.
-%		\item Designed and implemented a \textbf{C} Pong game for MSP430, with paddle movement, ball physics, and score tracking.
-%%		\item Implemented interrupt-driven input handling for buttons, ensuring responsive gameplay with 30+ FPS.
-%		\item Achieved 30+ FPS gameplay by using partial framebuffer updating instead of redrawing whole screen.
-%		\item Integrated buzzer audio feedback for game events such as ball-wall collisions and score updates.
-%	\end{itemize}
+% 	\customItem[
+% 		title=\href{https://github.com/AshkanArabim/pong-msp430}{Pong for MSP430 \faExternalLink},
+% 		duration=Solo | November 2023,
+% 		% keyHighlight=
+% 	]
+% 	\begin{itemize}
+% 		\vspace{-0.5em}
+% 		\itemsep -6pt {}
+% 		%		\item Implemented smooth graphics using interrupts to avoid graphical bottlenecks.
+% 		\item Designed and implemented a \textbf{C} Pong game for MSP430, with paddle movement, ball physics, and score tracking.
+% %		\item Implemented interrupt-driven input handling for buttons, ensuring responsive gameplay with 30+ FPS.
+% 		\item Achieved 30+ FPS gameplay by using partial framebuffer updating instead of redrawing whole screen.
+% 		\item Integrated buzzer audio feedback for game events such as ball-wall collisions and score updates.
+% 	\end{itemize}
 	
 %   vv not including hacktoberfest 2023 because it was mostly wasted on translation projects...
 	
@@ -377,17 +381,19 @@ Object-Oriented Programming{,}
 %		\item Fixed subtitle cutoff bug in ASCII video player written in \textbf{C} by debugging the subtitle buffer. \href{https://github.com/aidancrowther/ASCIIPlay}{\faExternalLink}
 %	\end{itemize}
 
-%	\customItem[
-%	title=\href{https://github.com/AshkanArabim/advent-of-code-2022}{Advent of Code 2022 - Annual Programming Challenge \faExternalLink},
-%	duration=August 2023,
-%	% keyHighlight=
-%	]
-%	\begin{itemize}
-%		\vspace{-0.5em}
-%		\itemsep -6pt {}
-%		\item Coded \textbf{C++} solutions to 12 of 25 challenge questions using backtracking, graph traversal algorithms, and more.
-%		\item Used classes, queues, vectors, and streams to efficiently calculate results based on given inputs.
-%	\end{itemize}
+	\customItem[
+	title=\href{https://github.com/AshkanArabim/advent-of-code-2022}{Advent of Code 2022 - Annual Programming Challenge \faExternalLink},
+	duration=Solo | August 2023,
+	% keyHighlight=
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		% \item Coded \textbf{C++} solutions to 12 of 25 challenge questions using backtracking, graph traversal algorithms, and more.
+		\item Coded \textbf{C++} solutions to 12 of 25 data structures \& algorithms challenges.
+		\item Used classes, queues, vectors, and streams to efficiently calculate results based on given inputs.
+	\end{itemize}
+
     % \customItem[
     %     title=\href{https://github.com/AshkanArabim/email-classifier}{Adaptive Phishing Email Training System \faExternalLink},
     %     duration=August 2023 - Present,
