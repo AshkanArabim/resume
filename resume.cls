@@ -34,8 +34,8 @@
     \begingroup
     \hfill{\MakeUppercase{\Huge\bfseries #1}}\hfill
     \break
-    \vspace{-0.5em}
-    \hrule
+    \vspace{-1.5em}
+    % \hrule
     \endgroup
 }
 
@@ -133,7 +133,8 @@
 
 \newkeycommand{\experienceItem}[company, position, location, duration]{
     % \textbf{\commandkey{company}, \commandkey{location}: \commandkey{position}} \hfill {\commandkey{duration}}
-    \textbf{\commandkey{position}: \commandkey{company}, \commandkey{location}} \hfill {\commandkey{duration}}
+    % \textbf{\commandkey{position}: \commandkey{company}, \commandkey{location}} \hfill {\commandkey{duration}}
+    \textbf{\commandkey{company}: \commandkey{position}} \hfill {\commandkey{duration} | \commandkey{location}}
 }
 
 \newkeycommand{\customItem}[title, duration, keyHighlight]{
