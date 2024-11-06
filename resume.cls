@@ -97,11 +97,12 @@
 %	honors,
 	% coursework
 ]{
-    {\bf \commandkey{program}} \hfill {Graduating \commandkey{graduation}} \\
+    \commandkey{program} \hfill {Graduating \commandkey{graduation}} \\
     % {\commandkey{university}} \hfill \ifcommandkey{grade}{GPA: \commandkey{grade}}{} \\
-    {\commandkey{university}} \hfill \ifcommandkey{majorgrade}{Major GPA: \commandkey{majorgrade}}{} \\
+    %% vv nasty hack to make my 4.0 major GPA bold
+    {\commandkey{university}} \hfill \ifcommandkey{majorgrade}{\textbf{Major GPA: \commandkey{majorgrade}}}{} \\
     % \ifcommandkey{majorgrade}{\rightline{Major GPA: \commandkey{majorgrade}}}{} % \\
-    \vspace{-15pt} % ugly hack to get rid of the newline created by "\rightline"
+    \vspace{-12pt} % ugly hack to get rid of the newline created by "\rightline"
     % \ifcommandkey{college}{\commandkey{college}}{} \\
     % \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} %\\
 %    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{}
