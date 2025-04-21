@@ -95,16 +95,16 @@
     % grade,
     majorgrade,
 %	honors,
-	% coursework
+	coursework % TOGGLE FOR COURSEWORK
 ]{
     \commandkey{program} \hfill {Graduating \commandkey{graduation}} \\
     % {\commandkey{university}} \hfill \ifcommandkey{grade}{GPA: \commandkey{grade}}{} \\
     %% vv nasty hack to make my 4.0 major GPA bold
     {\commandkey{university}} \hfill \ifcommandkey{majorgrade}{\textbf{Major GPA: \commandkey{majorgrade}}}{} \\
     % \ifcommandkey{majorgrade}{\rightline{Major GPA: \commandkey{majorgrade}}}{} % \\
-    \vspace{-12pt} % ugly hack to get rid of the newline created by "\rightline"
+    % \vspace{-12pt} % ugly hack to get rid of the newline created by "\rightline" % TOGGLE FOR COURSEWORK
     % \ifcommandkey{college}{\commandkey{college}}{} \\
-    % \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} %\\
+    \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} %\\ % TOGGLE FOR COURSEWORK
 %    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{}
 }
 
