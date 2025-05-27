@@ -250,7 +250,7 @@ Operating Systems%{,}
 \begin{workSection}{Projects}
 	
 	\customItem[
-	title=\href{https://github.com/AshkanArabim/hackerhunt}{HackerHunt \faExternalLink},
+	title=\href{https://github.com/AshkanArabim/hackerhunt}{hackerhunt.tech \faExternalLink},
 	duration=Solo | January 2025 - present,
 	]
 	\begin{itemize}
@@ -258,8 +258,22 @@ Operating Systems%{,}
 		\itemsep -6pt {}
 		\item Democratized collaboration by making a platform for UTEP students to find collaborators for technical sideprojects. 
 		\item Used \textbf{Django + ChakraUI + Redux + React-Router} to create fast, state-of-the-art fullstack webapp.
+		\item Incorporated email verification, password resetting, and transactional notifications through \textbf{AWS SES}.
 		% \item token-based authentication????
 		% \item TODO: add hard numbers after making it public
+	\end{itemize}
+	
+	\customItem[
+	title=Athlytix,
+	% the repo is private rn: https://github.com/AshkanArabim/athlytix
+	duration=Team of 4 | April 2025 - May 2025,
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		\item Created platform to connect MMA fighters seeking improvement with gyms/orgs seeking talent, using \textbf{Supabase} and \textbf{React}.
+		\item Enabled scalable extraction of statistics from training \& fighting videos by using \textbf{Deno serverless functions}.
+		\item Won the \textbf{Innovator Award} at STTE foundation's AI hackathon.
 	\end{itemize}
 
 	\customItem[
@@ -324,16 +338,16 @@ Operating Systems%{,}
 	%   TODO: add the "problem solving for ai" project if you feel like it. I personally winged it so idk if it should be here.
 	% \end{itemize}
 
-	\customItem[
-	title=\href{https://github.com/AshkanArabim/flirtify}{Flirtify \faExternalLink},
-	duration=Solo | December 2024 - January 2025,
-	]
-	\begin{itemize}
-		\vspace{-0.5em}
-		\itemsep -6pt {}
-		\item Created an Android chat app that uses Google's \textbf{Gemini API} to add a flirting tone to all sent messages.
-		\item Used \textbf{Flutter (Dart)} to create the mobile UI and \textbf{Firebase} to enable instant communication.
-	\end{itemize}
+	% \customItem[
+	% title=\href{https://github.com/AshkanArabim/flirtify}{Flirtify \faExternalLink},
+	% duration=Solo | December 2024 - January 2025,
+	% ]
+	% \begin{itemize}
+	% 	\vspace{-0.5em}
+	% 	\itemsep -6pt {}
+	% 	\item Created an Android chat app that uses Google's \textbf{Gemini API} to add a flirting tone to all sent messages.
+	% 	\item Used \textbf{Flutter (Dart)} to create the mobile UI and \textbf{Firebase} to enable instant communication.
+	% \end{itemize}
 
 	% title=\href{https://github.com/AshkanArabim/news-briefer}{News Bridge - BorderHack 2024 \faExternalLink},
 	% duration=Team of 4 | September 2024,
@@ -346,7 +360,8 @@ Operating Systems%{,}
 		\vspace{-0.5em}
 		\itemsep -6pt {}
 		% \item Increased access to diverse news by creating app for daily briefings from RSS feeds, regardless of source language.
-		\item Increased access to diverse news by creating an AI RSS news translator \& orator with \textbf{55 GitHub stars}.
+		% \item Increased access to diverse news by creating an AI RSS news translator \& orator with \textbf{55 GitHub stars}.
+		\item Increased access to diverse news by creating an AI RSS news translator \& orator with \textbf{54 GitHub stars}.
 		\item Implemented a microservice architecture using \textbf{Docker Compose}, for future load-balancing \& increased capacity.
 		% \item Enabled immediate playback using \textbf{Python async programming} to generate and play one sentence at a time.
 %		\item Developed app that takes RSS news feeds (from any source in any language), translates \& summarizes top stories, and plays the summary back like a news briefing podcast.
@@ -434,18 +449,18 @@ Operating Systems%{,}
 %		\item Added features like pipes, redirection, and background tasks by using multi-threading and semaphores, ensuring concurrency.
 %	\end{itemize}
 	
-	\customItem[
-		title=\href{https://github.com/AshkanArabim/os-file-transfer}{TCP/IP file-transfer \faExternalLink},
-		duration=Solo | March 2024,
-		% keyHighlight=
-	]
-	\begin{itemize}
-		\vspace{-0.5em}
-		\itemsep -6pt {}
-		\item Built custom client-server system to stream files over basic \textbf{TCP sockets} from \textbf{Python}'s "socket" networking library.
-		\item Enabled parallel transfers using forked child processes for each connection.
-		% \item Handled file metadata with \textbf{struct-based binary headers}, manually reassembled byte streams on server.
-	\end{itemize}
+	% \customItem[
+	% 	title=\href{https://github.com/AshkanArabim/os-file-transfer}{TCP/IP file-transfer \faExternalLink},
+	% 	duration=Solo | March 2024,
+	% 	% keyHighlight=
+	% ]
+	% \begin{itemize}
+	% 	\vspace{-0.5em}
+	% 	\itemsep -6pt {}
+	% 	\item Built custom client-server system to stream files over basic \textbf{TCP sockets} from \textbf{Python}'s "socket" networking library.
+	% 	\item Enabled parallel transfers using forked child processes for each connection.
+	% 	% \item Handled file metadata with \textbf{struct-based binary headers}, manually reassembled byte streams on server.
+	% \end{itemize}
 	
 % 	\customItem[
 % 		title=\href{https://github.com/AshkanArabim/OOP-project-1}{CLI Car Dealership \faExternalLink},
@@ -784,18 +799,22 @@ Operating Systems%{,}
 	% Linux(adv.){,} 
 	Git(adv.){,} 
 	% Docker(adv.){,} 
-	RDBMS(adv.){,} 
+	% RDBMS(adv.){,} 
 	ReactJS(adv.){,} 
 	% GitHub(adv.){,} 
 	%GitHub(med.){,} 
 	%GitLab(med.){,} 
 	%GTK(med.){,} 
 	PyTorch(med.){,} 
-	TensorFlow(med.){,} 
+	% TensorFlow(med.){,} 
 	% NumPy(med.){,} 
 	% Pandas(med.){,} 
 	% Docker Compose(med.){,} 
-	Flask(med.){,} 
+	% Flask(med.){,} 
+	FastAPI(med.){,} 
+	Supabase(med.){,} 
+	Firebase(med.){,} 
+	Django(med.){,}
 	% Redux(med.){,} 
 	% Node.JS(med.){,} 
 	% PostgreSQL(med.){,} 
@@ -805,9 +824,8 @@ Operating Systems%{,}
 	% PHP(novice){,} % I used this for the DB final project
 	% Make(novice){,} 
 	% MATLAB(novice){,} 
-	% AWS(novice){,} % plan B
+	% AWS(novice){,}
 	% Vue.JS(novice){,} % plan B
-	% Django(novice){,} % plan B
 	% Bazel(novice){,} % plan B
 	% imagemagick 
 	% Matplotlib(novice) 
@@ -817,7 +835,7 @@ Operating Systems%{,}
 	% Adobe Photoshop{,} 
 	%Adobe Illustrator{,} 
 	% nah: -----------------------
-	% Django {,}  SSH{,} Singularity{,} Webpack {,} Jupyter, Node.js
+	% SSH{,} Singularity{,} Webpack {,} Jupyter, Node.js
 	% DON'T INCLUDE:
 	% Node.JS, Webpack
 	]
