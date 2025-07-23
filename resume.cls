@@ -90,23 +90,24 @@
     \vspace{-0.3em}
 }
 
-\newkeycommand{\educationItem}[
-	university,college,program,graduation,
-    % grade,
-    majorgrade,
-%	honors,
-	coursework % TOGGLE FOR COURSEWORK
-]{
-    \commandkey{program} \hfill {Graduating \commandkey{graduation}} \\
-    % {\commandkey{university}} \hfill \ifcommandkey{grade}{GPA: \commandkey{grade}}{} \\
-    %% vv nasty hack to make my 4.0 major GPA bold
-    {\commandkey{university}} \hfill \ifcommandkey{majorgrade}{\textbf{Major GPA: \commandkey{majorgrade}}}{} \\
-    % \ifcommandkey{majorgrade}{\rightline{Major GPA: \commandkey{majorgrade}}}{} % \\
-    % \vspace{-12pt} % ugly hack to get rid of the newline created by "\rightline" % TOGGLE FOR COURSEWORK
-    % \ifcommandkey{college}{\commandkey{college}}{} \\
-    \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} %\\ % TOGGLE FOR COURSEWORK
-%    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{}
-}
+% note: this is such a useless annoying component I'd rather just not have it.
+% \newkeycommand{\educationItem}[
+% 	university,college,program,graduation,
+%     % grade,
+%     majorgrade,
+% %	honors,
+% 	coursework % TOGGLE FOR COURSEWORK
+% ]{
+%     \commandkey{program} \hfill {Graduating \commandkey{graduation}} \\
+%     % {\commandkey{university}} \hfill \ifcommandkey{grade}{GPA: \commandkey{grade}}{} \\
+%     %% vv nasty hack to make my 4.0 major GPA bold
+%     {\commandkey{university}} \hfill \ifcommandkey{majorgrade}{\textbf{Major GPA: \commandkey{majorgrade}}}{} \\
+%     % \ifcommandkey{majorgrade}{\rightline{Major GPA: \commandkey{majorgrade}}}{} % \\
+%     % \vspace{-12pt} % ugly hack to get rid of the newline created by "\rightline" % TOGGLE FOR COURSEWORK
+%     % \ifcommandkey{college}{\commandkey{college}}{} \\
+%     \ifcommandkey{coursework}{Relevant coursework: \commandkey{coursework}}{} %\\ % TOGGLE FOR COURSEWORK
+% %    \ifcommandkey{honors}{Honors \& Activities: \commandkey{honors}}{}
+% }
 
 \newcommand{\skills}{
     \textbf{\MakeUppercase{Skills}}
