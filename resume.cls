@@ -80,7 +80,7 @@
 }
 
 \newkeycommand{\skillItem}[category, skills]{
-    {\bf \commandkey{category}:} {\commandkey{skills}}
+    {\small {\bf \commandkey{category}:} {\commandkey{skills}}}
 }
 
 \newenvironment{workSection}[1]{%
