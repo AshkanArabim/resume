@@ -18,8 +18,9 @@
 }
 
 % Load the fontspec package to set the font
-\usepackage[scaled]{helvet} % Load the Helvetica font
-\renewcommand\familydefault{\sfdefault} % Set the default font family to sans-serif
+% \usepackage[scaled]{helvet} % Load the Helvetica font
+\usepackage{fourier}
+% \renewcommand\familydefault{\sfdefault} % Set the default font family to sans-serif
 \usepackage[T1]{fontenc} % Use the T1 font encoding to ensure proper character rendering
 
 \pagestyle{empty}
@@ -72,7 +73,7 @@
 }
 
 \newcommand{\summary}[1]{
-    \textbf{\textrm{\MakeUppercase{Summary}}}
+    \textbf{\MakeUppercase{Summary}}
     \vspace{0.4em}
     \hrule
     \vspace{-0.3em}
@@ -84,9 +85,9 @@
 }
 
 \newenvironment{workSection}[1]{%
-    \vspace{-0.2em}\par
-    \textbf{\textrm{\MakeUppercase{#1}}}%
-    \vspace{0.4em}\par
+    % \vspace{-0.2em}\par
+    \textbf{\MakeUppercase{#1}}
+    \vspace{0.2em}\par
     \hrule
     \vspace{-0.3em}%
     \begin{adjustwidth}{1em}{1em} % <-- add indent here
@@ -102,8 +103,8 @@
 \newkeycommand{\experienceItem}[company, position, location, duration]{
     % \textbf{\commandkey{company}, \commandkey{location}: \commandkey{position}} \hfill {\commandkey{duration}}
     % \textbf{\commandkey{position}: \commandkey{company}, \commandkey{location}} \hfill {\commandkey{duration}}
-    % \textbf{\commandkey{company}: \commandkey{position}} \hfill {\commandkey{duration} | \commandkey{location}}
-    \textbf{\commandkey{company}: \commandkey{position}} \hfill {\commandkey{duration}}
+    \textbf{\commandkey{company}: \commandkey{position}} \hfill {\commandkey{duration} | \commandkey{location}}
+    % \textbf{\commandkey{company}: \commandkey{position}} \hfill {\commandkey{duration}}
 }
 
 \newkeycommand{\customItem}[title, duration, keyHighlight, technologies]{

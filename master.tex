@@ -13,6 +13,10 @@
 %	urlcolor=cyan
 %}
 
+% disable hyphening
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
 \begin{document}
 
 \introduction[
@@ -28,68 +32,9 @@
 % \summary{Senior mechanical engineering student with internship experience in medical device manufacturing and product development. Project experience includes applications of software and hardware. Seeking full-time position May 2020 in medical device manufacturing and  pharmaceutical production. }
 
 \begin{workSection}{Education}
-	% \educationItem[
-	% university=The University of Texas at El Paso,
-	% graduation=December 2025,
-	% % grade=3.93, % after spring 25 semester
-	% majorgrade=4.00,
-	% program=Bachelor's of Science in Computer Science, %{,} Minor in Mathematics ,
-	% % note: bloomberg in spring 25 said coursework is always required
-	% coursework=
-	% Parallel Computing{,} 
-	% % Calculus I \& II{,}
-	% % Relational Databases{,} 
-	% % Machine Learning{,} 
-	% % Computer Vision{,} 
-	% Data Structures and Algorithms{,} % note: THIS ALWAYS STAYS
-	% Databases{,}
-	% % Object-Oriented Design{,} 
-	% % Numerical Analysis{,} 
-	% % Computer Organization{,} 
-	% % Computer Architecture{,} % same as above. some people call it this way
-	% %Discrete Math{,}
-	% Operating Systems%{,}
-	% %Digital Systems Design{,}
-	% %Programming Language Concepts{,}
-	% % Programming Languages{,}
-	% %Automata{,}
-	% % Matrix Algebra %{,}
-	% % Computer Organization{,} 
-	% % Probability \& Statistics {,}
-	% %Introductory Mechanics{,}
-	% , 
-	% %honors=Dean's List since Fall '22 - present {,} Houston Endowment Scholarship Recipient{,} CS Engagement and Leadership Award (spring 25) {,} 
-	% % Undergraduate Fellows{,} 
-	% % University Interscholastic League, 3rd place in computer science
-	% %,
-	% ]
-
 	\textbf{Master of Science, Artificial Intelligence} \hfill {December 2026} \\
 	\textbf{Bachelor of Science, Computer Science} \hfill {December 2025} \\
-	The University of Texas at El Paso \hfill GPA: 3.93 \\
-	Relevant coursework: 
-		Data Structures and Algorithms{,} % note: THIS ALWAYS STAYS
-		Operating Systems{,}
-		Parallel Computing{,} 
-		% Calculus I \& II{,}
-		% Relational Databases{,} 
-		Deep Learning{,} 
-		Machine Learning{,} 
-		Computer Vision{,} 
-		Databases{,}
-		Object-Oriented Design{,} 
-		% Numerical Analysis{,} 
-		% Computer Organization{,} 
-		% Computer Architecture{,} % same as above. some people call it this way
-		%Discrete Math{,}
-		%Digital Systems Design{,}
-		%Programming Language Concepts{,}
-		% Programming Languages{,}
-		%Automata{,}
-		Matrix Algebra{,}
-		% Computer Organization{,} 
-		% Probability \& Statistics {,}
-		%Introductory Mechanics{,}
+	The University of Texas at El Paso \hfill GPA: 3.93
 \end{workSection}
 
 %%%%%%%%%%%
@@ -98,6 +43,13 @@
 %%%%%%%%%%%
 
 \begin{workSection}{Experience}
+	
+	\experienceItem[
+	company=Primer.com,
+	location=San Francisco{,} CA,
+	position=Incoming Software Engineering Intern,
+	duration= December 2025 - May 2026,
+	]
 	
 	\experienceItem[
 	company=Capital One,
@@ -112,31 +64,41 @@
 		% \item Created data pipeline for fraud detection during payment processing using {Java}, {Spring Boot}, \& {Hibernate}.
 		% \item Created fraud detection data pipeline using {Java}, {Spring Boot}, \& {Hibernate}, contributing to projected {23\% reduction in fraud}.
 		% note: project 1:
+		% note: the internal tool was CODI
 		% \item Built 
 		% % root-cause-analysis dashboard 
 		% alerting pipeline 
 		% to detect card service failures \& notify SREs, reducing incident-response time by 
 		% % {61\%}. % note: pulled from the presentation
 		% {93\%}. % note: reduction from 4 hours to 15 mins
-		\item Reduced incident-response time by {93\%} by building alerting pipeline for card service failure detection.
+		% \item Reduced incident-response time by {93\%} by building alerting pipeline for card service failure detection.
+		\item Built \& deployed anomaly-detection pipeline for Capital One's card decisioning system, notifying SREs of malfunctioning ML models and reducing incident-response time \textbf{from 4+ hours to <15 mins}.
+		\item Wrote highly optimized \textbf{Databricks SQL} \& evaluated warehouse sizes to minimize pipeline cost \& latency.
+		% \item Partnered with Observe Inc. to provide product feedback on dashboarding and alerting features, influencing vendor roadmap.
 
 		% \item Leveraged internal tools to monitor {Snowflake} data and spot performance anomalies.
-		% note: project 2:
+		% note: project 2: meh. does anyone really care about a New Relic to Observe migration?
 		% note: may want to add the fact that I used Gemini here
 		% \item Migrated monitoring dashboards from {New Relic} and {Splunk} to {Observe}, reducing observability fragmentation.
-		% \item Centralized observability by writing Python + Gemini script to move dashboards from New Relic to Observe.
+		% \item Centralized observability by writing Python + Gemini script to move dashboards from New Relic to Observe. % note: plan b
 		% note: data src for observe vs new relic: https://techcrunch.com/2023/10/05/observability-platform-observe-raises-50m-in-debt-launches-gen-ai-features/
-		\item Slashed team observability cost by >70\%, using Python to move New Relic dashboards to Observe.
+		% \item Slashed team observability cost by >70\%, using Python to move New Relic dashboards to Observe. % note: python is plan b
+		
 		% note: project 3:
 		% \item Streamlined developer experience {Java} library tracking data lineage across card authorization system.
 		% note: technically, consumer lineage is more broad. "consumer" just means other teams can use the plugin.
 		% note: you could also add Mockito here.
+		% note: other tech used: 
 		% \item Extended {Java} data lineage plugin to support consumer spending data, improving audit-readiness.
 		% \item Extended {Java} data lineage plugin to support consumer spending data though test-driven development with {JUnit}.
+		\item Extended \textbf{Java}-based lineage plugin to log custom data transformations using a YAML specification.
+		\item Applied \textbf{test-driven development} using \textbf{JUnit} and \textbf{Mockito} to ensure robust, maintainable code.
+
 		% note: fuck it. just doing plan B is easier.
 		% \item Created plugin to log card data transformations using {Java} and {JUnit} test-driven development, improving audit-readiness.
-		\item Created Java logging plugin to add traceability to card data transformations.
-		% databricks sql optimization to resume. from 45 mins to 7 mins
+		% \item Created Java logging plugin to add traceability to card data transformations. % note: too vague. too generic.
+
+		% note: databricks sql optimization to resume. from 45 mins to 7 mins
 		% note: ^^ but snowflake if you need plan b. the original snowflake was fine. only databricks needed tweaking.
 	\end{itemize}
 	
@@ -174,12 +136,12 @@
 		% \item Set up infrastructure for manufacturing automation by configuring and deploying {Docker} containers.
 		% note: 50% is plan b
 		% \item Set up {robotic automation} infrastructure by deploying {Docker} containers on {Linux} servers, reducing costs by up to {50\%}. 
-		\item Reduced production line costs by $\sim$34\% by deploying Docker infrastructure for wafer transporter robots.
+		\item Reduced production line costs by \textbf{$\sim$34\%} by deploying \textbf{Docker} infrastructure for wafer transporter robots.
 		% \item Set up infrastructure for {fab transporter robots} by configuring {Docker} containers on {Linux} servers.
 		% \item Ensured system reliability through unit and integration testing with Insomnia.
 		% \item Ensured system reliability through unit and integration testing with Insomnia before final deployment.
 		% \item Coordinated with {10+} sysadmins \& stakeholders to configure Oracle {SQL} databases and internal {APIs}.
-		\item Met with {10+} stakeholders to configure {Oracle SQL} databases, {REST APIs}, and documentation.
+		\item Met with {10+} stakeholders to configure \textbf{Oracle SQL} databases, {REST APIs}, and documentation.
 		% \item Created Oracle SQL tables and views feeding 
 	\end{itemize}
 	
@@ -202,8 +164,8 @@
 		%	\item Contributed to the development of GNOME Clocks, an {app used by thousands of Linux users} to keep track of time.
 		% \item (CHANGE THIS) learned Vala and GTK *on my own!!!!*. only using online docs and code examples
 		% \item Contributed to GNOME Clocks; {used by thousands of Linux users} to track  time. % note: bloomberg said this is shit.
-		\item Implemented timer editing and full-screen timers in GNOME Clocks, used by 40+ million to track time.
-		\item Opened 3 PRs, reviewed code with maintainers, and merged my GTK + Vala components.
+		\item Implemented timer editing and full-screen timers in GNOME Clocks, \textbf{used by 40+ million} to track time.
+		\item Opened \textbf{3 PRs}, reviewed code with maintainers, and merged my \textbf{GTK + Vala} components.
 		% features such as 
 		% full-screen timers and timer editing using {Vala} bindings and {GTK} components \href{https://youtu.be/fDzYWusOLow}{({video demo })}. % (in progress)
 		% full-screen timers and timer editing using {Vala} bindings and {GTK} components.
@@ -233,9 +195,9 @@
 		%  \item Developed an \href{https://github.com/AshkanArabim/accent-change-paper-implementation}{{accent-changer model} } able to convert foreign English accents to native using HuggingFace pretrained AI/ML models through their  API.
 		% \item Developed \href{https://github.com/AshkanArabim/accent-change-paper-implementation}{accent-changer model } to convert foreign English accents to native using HuggingFace pretrained AI/ML models.
 		% \item Built \href{https://github.com/AshkanArabim/accent-change-paper-implementation}{{accent-changer}} using {HuggingFace} pretrained models to change foreign English accents to native.
-		\item Built tone-changer by fine-tuning {HuggingFace} models to change normal tone to autistic. % note: plan b
+		\item Built tone-changer by fine-tuning \textbf{HuggingFace} models to change normal tone to autistic. % note: plan b
 		% \item Implemented a \href{https://github.com/AshkanArabim/neural-style-transfer}{{neural style-transfer model} } in {PyTorch} to learn PyTorch \& explore usage for accent-changing.
-		\item Implemented \href{https://github.com/AshkanArabim/neural-style-transfer}{{neural style-transfer model}} in {PyTorch} to explore usage for accent-changing.
+		\item Implemented \href{https://github.com/AshkanArabim/neural-style-transfer}{{neural style-transfer model}} in \textbf{PyTorch} to explore usage for accent-changing.
 %		\item Used Python's multiprocessing library to parallelize CPU-intensive experiments.
 		% \item Reduced evaluation script runtime 
 		% 	%{from 24+ hrs to 10 mins} 
@@ -243,7 +205,7 @@
 		% 	by rewriting loops as higher-dimension tensor operations
 		\item Increased evaluation script performance by
 			%{from 24+ hrs to 10 mins} 
-			{144x} 
+			\textbf{144x} 
 			reimplementing KNN in PyTorch to utilize GPU.
 	\end{itemize}
 	
@@ -316,7 +278,7 @@
         \itemsep -6pt {}
 				\item Published
 				\href{https://dl.acm.org/doi/10.1145/3565287.3617613}{{paper} } 
-				in ACM MobiHoc about using Wi-Fi CSI for hand gesture recognition on smartphones.
+				in \textbf{ACM MobiHoc} about using Wi-Fi CSI for hand gesture recognition on smartphones.
         % \item Wrote
         % \href{https://dl.acm.org/doi/10.1145/3565287.3617613}{{first-author publication }}{,} 
         % {accepted into ACM MobiHoc '23}{,}
@@ -326,7 +288,7 @@
         % \item Developed CNN architecture to classify 5 gestures from 4 people in 6 scenarios using {Keras}. %(TensorFlow, Python, Bash)
         \item Developed CNN model to classify 5 gestures 
 				% from 4 people
-				in 6 scenarios using {TensorFlow} with {>90\% accuracy}. %(TensorFlow, Python, Bash)
+				in 6 scenarios using \textbf{TensorFlow} with \textbf{>90\% accuracy}. %(TensorFlow, Python, Bash)
 %        \item Obtained >90\% classification accuracy by using techniques such as LR Scheduling.
         % \item {1st place} for the best REU site final presentation. %(TensorFlow, Keras)
 %        \item Used {Bash, Android Debug Bridge, and NumPy} for data extraction and preprocessing.
@@ -340,21 +302,21 @@
 
 \begin{workSection}{Projects}
 	
-	% \customItem[
-	% title=Ashdocs,
-	% technologies= | Go(Golang){,} Websockets,
-	% % the repo is private rn: https://github.com/AshkanArabim/athlytix
-	% % duration=%Solo | 
-	% % August 2025 - present,
-	% ]
-	% \begin{itemize}
-	% 	\vspace{-0.5em}
-	% 	\itemsep -6pt {}
-	% 	\item Created Google Docs clone in {Go}, able to handle multiple users' parallel real-time edits on documents.
-	% \end{itemize}
+	\customItem[
+	title=Ashdocs (in progress),
+	technologies= | Go(Golang){,} Websockets,
+	% the repo is private rn: https://github.com/AshkanArabim/athlytix
+	% duration=%Solo | 
+	% August 2025 - present,
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		\item Created Google Docs clone in {Go}, able to handle multiple users' parallel real-time edits on documents.
+	\end{itemize}
 	
 	\customItem[
-	title=\href{https://github.com/AshkanArabim/hackerhunt}{hackerhunt.tech },
+	title=\href{https://github.com/AshkanArabim/hackerhunt}{hackerhunt.tech \faExternalLink},
 	technologies= | Django{,} React{,} TypeScript{,} Nginx{,} Docker{,} AWS SES,
 	duration=%Solo | 
 	% January 2025 - May 2025,
@@ -366,10 +328,10 @@
 		% \item Used {Django + ChakraUI + Redux + React-Router + TypeScript} to create fast, state-of-the-art fullstack webapp.
 		% \item Used {Django REST Framework} (Service-Oriented Architecture) \& {Django ORM} to create MVP webapp.
 		% \item Incorporated email verification, password resetting, and transactional notifications through {AWS SES}.
-		\item Minimized costs by self-hosting HTTPS page using {Nginx}, {Docker Compose}, and manual DNS setup.
+		% \item Minimized costs by self-hosting HTTPS page using \textbf{Nginx}, \textbf{Docker Compose}, and manual DNS setup.
 		% \item token-based authentication????
 		% \item Raised {\$1000 in pre-seed funding} for first round of market validation advertisements, helping to get {30+ beta testers}. % 30 users is plan b
-		\item Raised {\$1000 in pre-seed funding} for market validation advertisements, helping to get {30+ beta testers}. % 30 users is plan b
+		\item Raised \textbf{\$1000 in pre-seed funding} for market validation advertisements, helping to get \textbf{30+ beta testers}. % 30 users is plan b
 		% \item Created Bash {CI/CD} script to immediately deploy new releases.
 		% \item TODO: add hard numbers after making it public
 	\end{itemize}
@@ -475,7 +437,7 @@
 	% duration=Team of 4 | September 2024,
 	% original title ^^
 	\customItem[
-		title=\href{https://github.com/AshkanArabim/newsbridge}{Newsbridge (news.ashkan.zone) },
+		title=\href{https://github.com/AshkanArabim/newsbridge}{Newsbridge (news.ashkan.zone) \faExternalLink},
 		technologies= | FastAPI{,} React{,} PostgreSQL{,} JavaScript{,} Docker,
 		duration=%Team of 4 | 
 		% September 2024 - December 2024,
@@ -485,9 +447,9 @@
 		\itemsep -6pt {}
 		% \item Increased access to diverse news by creating app for daily briefings from RSS feeds, regardless of source language.
 		% \item Increased access to diverse news by creating an AI RSS news translator \& orator with {55 GitHub stars}.
-		\item Increased access to diverse news by creating an AI RSS news translator \& orator with {55 GitHub stars}.
+		\item Increased access to diverse news by creating an AI RSS news translator \& orator with \textbf{55 GitHub stars}.
 		% \item Implemented a microservice architecture using {Docker Compose}, for future load-balancing \& increased capacity.
-		\item Ensured load-balancing \& scaling capacity by using a Docker Compose microservice architecture.
+		\item Ensured load-balancing \& scaling capacity by using a \textbf{Docker Compose microservice architecture}.
 		% \item Enabled immediate playback using {Python async programming} to generate and play one sentence at a time.
 %		\item Developed app that takes RSS news feeds (from any source in any language), translates \& summarizes top stories, and plays the summary back like a news briefing podcast.
 		% \item Used {Flask} with {PostgreSQL} to fetch users' news sources and pass them to LLM and TTS models for summarization.
@@ -839,57 +801,84 @@
     
 \end{workSection}
 
-\begin{workSection}{Leadership}
-%     % \customItem[
-%     %     title=CS Student Council,
-%     %     %         keyHighlight=One of the founders{,} and current member of the Council{,} helping students voice their concerns to the administration.
-%     %     keyHighlight=Empowered the CS students to voice their suggestions by providing feedback channels and hosting town halls.,
-%     %     duration=Fall 2023 - Present
-%     % ]
-%     % \begin{itemize}
-%     %     \vspace{-0.5em}
-%     %     \itemsep -6pt {}
-%     %     % \item Drafted ...
-%     % \end{itemize}
+% \begin{workSection}{Leadership}
+% %     % \customItem[
+% %     %     title=CS Student Council,
+% %     %     %         keyHighlight=One of the founders{,} and current member of the Council{,} helping students voice their concerns to the administration.
+% %     %     keyHighlight=Empowered the CS students to voice their suggestions by providing feedback channels and hosting town halls.,
+% %     %     duration=Fall 2023 - Present
+% %     % ]
+% %     % \begin{itemize}
+% %     %     \vspace{-0.5em}
+% %     %     \itemsep -6pt {}
+% %     %     % \item Drafted ...
+% %     % \end{itemize}
     
-    \customItem[
-			title=President \& Founder - \href{https://www.instagram.com/foss.utep/}{{FOSS Club} },
-			duration=December 2023 - March 2025
-    ]
-    \begin{itemize}
-			\vspace{-0.5em}
-			\itemsep -6pt {}
-%    	\item Encouraged participation in open-source projects through workshops, info sessions, competitions, and social events.
-			\item Scaled UTEP's first open-source-focused student organization from {0 to 264 members in 3 semesters}. % see post-resignation stats
-			\item Organized {47 workshops, personally presenting 20}, covering topics such as Git, Linux, \& Kubernetes.
-			% \item Led team of 6 officers to host weekly workshops on git, Linux, Vim, open-source software development, and more.
-			% note: 30 is plan b. (orig. 12)
-			% \item Hosted UTEP's {first open-source hackathon}, OpenHack, attended by {30+ first-time contributors}.
-			\item Hosted OpenHack, UTEP's {first open-source hackathon}, attended by {30+ first-time contributors}.
-    \end{itemize}
+%     \customItem[
+% 			title=President \& Founder - \href{https://www.instagram.com/foss.utep/}{{FOSS Club} },
+% 			duration=December 2023 - March 2025
+%     ]
+%     \begin{itemize}
+% 			\vspace{-0.5em}
+% 			\itemsep -6pt {}
+% %    	\item Encouraged participation in open-source projects through workshops, info sessions, competitions, and social events.
+% 			\item Scaled UTEP's first open-source-focused student organization from \textbf{0 to 264 members in 3 semesters}. % see post-resignation stats
+% 			\item Organized \textbf{47 workshops, personally presenting 20}, covering topics such as Git, Linux, \& Kubernetes.
+% 			% \item Led team of 6 officers to host weekly workshops on git, Linux, Vim, open-source software development, and more.
+% 			% note: 30 is plan b. (orig. 12)
+% 			% \item Hosted UTEP's {first open-source hackathon}, OpenHack, attended by {30+ first-time contributors}.
+% 			% \item Hosted OpenHack, UTEP's {first open-source hackathon}, attended by \textbf{30+ first-time contributors}.
+%     \end{itemize}
 
-% %    \customItem[
-% %        title=Treasurer - Association for Computing Machinery at UTEP,
-% %        %        keyHighlight=Multiple roles{,} including publicity officer \& treasurer,
-% %        % keyHighlight=Promoted side-projects and research by hosting informational and technical workshops to 40+ students each semester.,
-% %        duration=August 2022 - January 2024
-% %    ]
-% %    \begin{itemize}
-% %        \vspace{-0.5em}
-% %        \itemsep -6pt {}
-% %%        \item Planned and executed the Sun City Hackathon; a three-day competition attended by {more than 20 students} to develop novel AI-powered apps.
-% %        \item Held the Sun City Hackathon; a three-day competition attended by {more than 20 students} to develop AI-powered apps.
-% %%%        \item Promoted side-projects and research by hosting informational and technical workshops to 40+ students each semester.
-% %%              % \item Recruited 50+ members through public presentations. # bad
-% %%              % \item Engaged with the student body to recruit more than 50 students.
-% %%              % \item Organized and planned of more than 6 workshops sponsored by companies such as Google.
-% %%              % \item Presented multiple interactive workshops attended by org members on topics such as Node.JS.
-% %%              %        \item Promoted research and open-source contributions by hosting info sessions and technical workshops to 40+ students each semester.
-% %    \end{itemize}
-\end{workSection}
+% % %    \customItem[
+% % %        title=Treasurer - Association for Computing Machinery at UTEP,
+% % %        %        keyHighlight=Multiple roles{,} including publicity officer \& treasurer,
+% % %        % keyHighlight=Promoted side-projects and research by hosting informational and technical workshops to 40+ students each semester.,
+% % %        duration=August 2022 - January 2024
+% % %    ]
+% % %    \begin{itemize}
+% % %        \vspace{-0.5em}
+% % %        \itemsep -6pt {}
+% % %%        \item Planned and executed the Sun City Hackathon; a three-day competition attended by {more than 20 students} to develop novel AI-powered apps.
+% % %        \item Held the Sun City Hackathon; a three-day competition attended by {more than 20 students} to develop AI-powered apps.
+% % %%%        \item Promoted side-projects and research by hosting informational and technical workshops to 40+ students each semester.
+% % %%              % \item Recruited 50+ members through public presentations. # bad
+% % %%              % \item Engaged with the student body to recruit more than 50 students.
+% % %%              % \item Organized and planned of more than 6 workshops sponsored by companies such as Google.
+% % %%              % \item Presented multiple interactive workshops attended by org members on topics such as Node.JS.
+% % %%              %        \item Promoted research and open-source contributions by hosting info sessions and technical workshops to 40+ students each semester.
+% % %    \end{itemize}
+% \end{workSection}
 
 \begin{workSection}{Skills}
 	% note: NOBODY CARES ABOUT SKILL RATINGS!!!
+	\skillItem[
+		category=Coursework,
+		skills=
+		data structures and algorithms{,} % note: THIS ALWAYS STAYS
+		operating systems{,}
+		parallel computing{,} 
+		% calculus i \& ii{,}
+		% relational databases{,} 
+		deep learning{,} 
+		machine learning{,} 
+		% computer vision{,} 
+		% database systems{,}
+		% object-oriented programming{,} 
+		% numerical analysis{,} 
+		% computer organization{,} 
+		% computer architecture{,} % same as above. some people call it this way
+		%discrete math{,}
+		%digital systems design{,}
+		%programming language concepts{,}
+		% programming languages{,}
+		%automata{,}
+		% matrix algebra{,}
+		% information retrieval{,}
+		% computer organization{,} 
+		% probability \& statistics {,}
+		%introductory mechanics{,}
+	] \\
 	\skillItem[
 		%category=Programming / Markup Languages,
 		category=Languages,
@@ -937,8 +926,8 @@
 		JUnit{,} 
 		% Mockito{,}
 		FastAPI{,} %(med.){,} 
-		Supabase{,} %(med.){,} 
-		Firebase{,} %(med.){,} 
+		% Supabase{,} %(med.){,} 
+		% Firebase{,} %(med.){,} 
 		Flask{,} %(med.){,} 
 		% Redux{,} %(med.){,} 
 		% Node.JS{,} %(med.){,} 
@@ -964,7 +953,7 @@
 		% Observe{,} %(med.){,}
 		AWS{,} %(novice){,}
 		Google Cloud(GCP){,} %(novice){,}
-		Kubernetes{,} %(novice){,} 
+		% Kubernetes{,} %(novice){,} 
 		% Make{,} %(novice){,} 
 		% Snowflake{,} %(novice){,}
 		MongoDB(NoSQL){,} 
@@ -984,7 +973,7 @@
 		% DON'T INCLUDE:
 		% Webpack
 	]
-	%\\
+	\\
 	%\skillItem[
 	%    category=Certifications,
 	%    skills=Coursera Deep Learning Specialization {-} October 2023
@@ -1001,7 +990,9 @@
 		skills=
 		containerization{,} 
 		unit testing{,} 
-		test driven development(TDD){,} 
+		% test driven development(TDD){,} 
+		multi-threading{,} 
+		concurrency{,} 
 		% Integration testing{,} 
 		% Agile{,} 
 		% Scrum{,} 
@@ -1009,6 +1000,7 @@
 		LLMs{,} 
 		CI/CD{,} 
 		DevOps{,} 
+		% distributed systems{,} 
 		code review{,} 
 	]
 \end{workSection}
