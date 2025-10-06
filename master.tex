@@ -44,12 +44,12 @@
 
 \begin{workSection}{Experience}
 	
-	\experienceItem[
-	company=Primer.com,
-	location=San Francisco{,} CA,
-	position=Incoming Software Engineering Intern,
-	duration= December 2025 - May 2026,
-	]
+	% \experienceItem[
+	% company=Primer.com,
+	% location=San Francisco{,} CA,
+	% position=Incoming Software Engineering Intern,
+	% duration= December 2025 - May 2026,
+	% ]
 	
 	\experienceItem[
 	company=Capital One,
@@ -91,7 +91,8 @@
 		% note: other tech used: 
 		% \item Extended {Java} data lineage plugin to support consumer spending data, improving audit-readiness.
 		% \item Extended {Java} data lineage plugin to support consumer spending data though test-driven development with {JUnit}.
-		\item Extended \textbf{Java}-based lineage plugin to log custom data transformations using a YAML specification.
+		% \item Extended \textbf{Java}-based lineage plugin to log custom data transformations using a YAML specification.
+		\item Extended \textbf{Java}-based plugin to log custom \textbf{Apache Spark} data lineage events using a YAML specification. % note: mild plan b
 		\item Applied \textbf{test-driven development} using \textbf{JUnit} and \textbf{Mockito} to ensure robust, maintainable code.
 
 		% note: fuck it. just doing plan B is easier.
@@ -328,7 +329,7 @@
 		% \item Used {Django + ChakraUI + Redux + React-Router + TypeScript} to create fast, state-of-the-art fullstack webapp.
 		% \item Used {Django REST Framework} (Service-Oriented Architecture) \& {Django ORM} to create MVP webapp.
 		% \item Incorporated email verification, password resetting, and transactional notifications through {AWS SES}.
-		% \item Minimized costs by self-hosting HTTPS page using \textbf{Nginx}, \textbf{Docker Compose}, and manual DNS setup.
+		\item Minimized costs by self-hosting HTTPS page using \textbf{Nginx}, \textbf{Docker Compose}, and manual DNS setup.
 		% \item token-based authentication????
 		% \item Raised {\$1000 in pre-seed funding} for first round of market validation advertisements, helping to get {30+ beta testers}. % 30 users is plan b
 		\item Raised \textbf{\$1000 in pre-seed funding} for market validation advertisements, helping to get \textbf{30+ beta testers}. % 30 users is plan b
@@ -582,15 +583,17 @@
 %	\end{itemize}
 	
 % 	\customItem[
-% 		title=\href{https://github.com/AshkanArabim/pong-msp430}{Pong for MSP430 },
-% 		duration=Solo | November 2023,
+% 		title=\href{https://github.com/AshkanArabim/pong-msp430}{Pong for MSP430 \faExternalLink},
+% 		technologies=| C
+% 		% duration=Solo | November 2023,
 % 		% keyHighlight=
 % 	]
 % 	\begin{itemize}
 % 		\vspace{-0.5em}
 % 		\itemsep -6pt {}
 % 		%		\item Implemented smooth graphics using interrupts to avoid graphical bottlenecks.
-% 		\item Designed and implemented a {C} Pong game for MSP430, with paddle movement, ball physics, and score tracking.
+% 		% \item Designed and implemented a {C} Pong game for MSP430, with paddle movement, ball physics, and score tracking.
+% 		\item Designed and implemented Pong for MSP430, with paddle movement, ball physics, and score tracking.
 % %		\item Implemented interrupt-driven input handling for buttons, ensuring responsive gameplay with 30+ FPS.
 % 		\item Achieved {30+ FPS} gameplay by using partial framebuffer updating instead of redrawing whole screen.
 % 		\item Integrated buzzer audio feedback for game events such as ball-wall collisions and score updates.
@@ -929,6 +932,7 @@
 		% Supabase{,} %(med.){,} 
 		% Firebase{,} %(med.){,} 
 		Flask{,} %(med.){,} 
+		Spring Boot{,} %(med.){,} % note: plan b
 		% Redux{,} %(med.){,} 
 		% Node.JS{,} %(med.){,} 
 		% RabbitMQ{,} %(novice){,} 
@@ -959,6 +963,8 @@
 		MongoDB(NoSQL){,} 
 		PostgreSQL{,} %(med.){,} 
 		MySQL{,} %(med.){,} 
+		Kafka{,}
+		Cursor{,}
 		% GraphQL{,} 
 		% New Relic{,} %(novice){,}
 		% Bazel{,} %(novice){,} % plan B
