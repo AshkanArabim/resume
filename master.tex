@@ -319,7 +319,7 @@
 	% \end{itemize}
 	
 	\customItem[
-	title=Ashdocs,
+	title=\href{https://github.com/ashkanArabim/ashdocs}{Ashdocs \faExternalLink},
 	technologies= | Go(Golang){,} Websocket{,} Automerge,
 	% the repo is private rn: https://github.com/AshkanArabim/athlytix
 	% duration=%Solo | 
@@ -330,8 +330,8 @@
 		\itemsep -6pt {}
 		\item Created Google Docs clone in \textbf{Go}, able to handle multiple users' parallel real-time edits on documents.
 		\item Integrated \textbf{Automerge} CRDTs to ensure conflict-free merging of simultaneous user edits.
-		\item Designed \textbf{websocket} event pipeline handling per-document broadcast and state propagation.
-		\item Built operation log for replaying, reconciling, \& restoring doc state, w/ snapshots to speed up recovery.
+		\item Designed \textbf{Websocket} event pipeline handling per-document broadcast and state propagation.
+		\item Built operation log in \textbf{Pebble key-value store} for storing \& restoring doc state.
 		% \item Added server-side snapshotting to reduce recovery time and maintain consistency across editing sessions.
 	\end{itemize}
 	
