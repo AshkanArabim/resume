@@ -317,7 +317,23 @@
 	% 	% \item Implemented secure SSH tunnel connectivity with automated retries within 10 seconds.
 	% 	\item Orchestrated automated penetration tests using \textbf{Metasploit} to identify and validate exploitable flaws.
 	% \end{itemize}
-	
+
+	\customItem[
+		title=\href{https://github.com/AshkanArabim/movie-recommender}{Movie Rec Engine \faExternalLink},
+		technologies= | FAISS{,} Redis{,} gRPC{,} PyTorch{,} FastAPI{,} Postgres{,} AWS,
+		% the repo is private rn: https://github.com/AshkanArabim/athlytix
+		% duration=%Solo | 
+		% August 2025 - present,
+	]
+	\begin{itemize}
+		\vspace{-0.5em}
+		\itemsep -6pt {}
+		\item Implemented production-grade collaborative-filtering-based movie recommender, deployed to \textbf{AWS}.
+		\item Separated retrieval \& ranking services for independent scaling, connected by \textbf{gRPC} for minimum overhead.
+		\item Used \textbf{FAISS} for GPU-accelerated candidate retrieval \& \textbf{Redis} to reduce repeated embedding lookups.
+		% \item Supported real-time embedding updates to propagate new user interactions without offline retraining.
+	\end{itemize}
+
 	\customItem[
 	title=\href{https://github.com/ashkanArabim/ashdocs}{Ashdocs \faExternalLink},
 	technologies= | Go(Golang){,} Websocket{,} Automerge,
@@ -332,29 +348,30 @@
 		\item Integrated \textbf{Automerge} CRDTs to ensure conflict-free merging of simultaneous user edits.
 		\item Designed \textbf{Websocket} event pipeline handling per-document broadcast and state propagation.
 		\item Built operation log in \textbf{Pebble key-value store} for storing \& restoring doc state.
+		% \item Built operation log in \textbf{Pebble key-value store} for storing \& restoring doc state.
 		% \item Added server-side snapshotting to reduce recovery time and maintain consistency across editing sessions.
 	\end{itemize}
 	
-	\customItem[
-	title=\href{https://github.com/AshkanArabim/hackerhunt}{hackerhunt.tech \faExternalLink},
-	technologies= | Python{,} Django{,} React{,} TypeScript{,} Nginx{,} Docker{,} AWS SES,
-	duration=%Solo | 
-	% January 2025 - May 2025,
-	]
-	\begin{itemize}
-		\vspace{-0.5em}
-		\itemsep -6pt {}
-		\item Democratized collaboration by making a platform for students to find collaborators for technical projects. 
-		% \item Used {Django + ChakraUI + Redux + React-Router + TypeScript} to create fast, state-of-the-art fullstack webapp.
-		% \item Used {Django REST Framework} (Service-Oriented Architecture) \& {Django ORM} to create MVP webapp.
-		\item Incorporated email verification, password resetting, and transactional notifications through \textbf{AWS SES}.
-		\item Minimized costs by self-hosting HTTPS webapp using \textbf{Nginx}, \textbf{Certbot}, and manual DNS setup.
-		% \item token-based authentication????
-		% \item Raised {\$1000 in pre-seed funding} for first round of market validation advertisements, helping to get {30+ beta testers}. % 30 users is plan b
-		\item Raised \textbf{\$1000 in pre-seed funding} for market validation advertisements, helping to get \textbf{30+ beta testers}. % 30 users is plan b
-		\item Created \textbf{Bash} {CI/CD} script to immediately deploy new releases.
-		% \item TODO: add hard numbers after making it public
-	\end{itemize}
+	% \customItem[
+	% title=\href{https://github.com/AshkanArabim/hackerhunt}{hackerhunt.tech \faExternalLink},
+	% technologies= | Python{,} Django{,} React{,} TypeScript{,} Nginx{,} Docker{,} AWS SES,
+	% duration=%Solo | 
+	% % January 2025 - May 2025,
+	% ]
+	% \begin{itemize}
+	% 	\vspace{-0.5em}
+	% 	\itemsep -6pt {}
+	% 	\item Democratized collaboration by making a platform for students to find collaborators for technical projects. 
+	% 	% \item Used {Django + ChakraUI + Redux + React-Router + TypeScript} to create fast, state-of-the-art fullstack webapp.
+	% 	% \item Used {Django REST Framework} (Service-Oriented Architecture) \& {Django ORM} to create MVP webapp.
+	% 	\item Incorporated email verification, password resetting, and transactional notifications through \textbf{AWS SES}.
+	% 	\item Minimized costs by self-hosting HTTPS webapp using \textbf{Nginx}, \textbf{Certbot}, and manual DNS setup.
+	% 	% \item token-based authentication????
+	% 	% \item Raised {\$1000 in pre-seed funding} for first round of market validation advertisements, helping to get {30+ beta testers}. % 30 users is plan b
+	% 	\item Raised \textbf{\$1000 in pre-seed funding} for market validation advertisements, helping to get \textbf{30+ beta testers}. % 30 users is plan b
+	% 	\item Created \textbf{Bash} {CI/CD} script to immediately deploy new releases.
+	% 	% \item TODO: add hard numbers after making it public
+	% \end{itemize}
 	
 	% \customItem[
 	% title=Athlytix,
@@ -458,7 +475,7 @@
 	% original title ^^
 	\customItem[
 		title=\href{https://github.com/AshkanArabim/newsbridge}{Newsbridge (news.ashkan.zone) \faExternalLink},
-		technologies= | FastAPI{,} React{,} PostgreSQL{,} JavaScript{,} Docker{,} Ollama{,} Gemini API,
+		technologies= | FastAPI{,} React{,} Postgres{,} JavaScript{,} Docker{,} Ollama{,} Gemini API,
 		duration=%Team of 4 | 
 		% September 2024 - December 2024,
 	]
