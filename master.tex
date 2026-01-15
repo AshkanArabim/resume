@@ -328,9 +328,10 @@
 	\begin{itemize}
 		\vspace{-0.5em}
 		\itemsep -6pt {}
+		% for more info see corresponding obsidian notebook & project docs on github
 		\item Implemented production-grade collaborative-filtering-based movie recommender, deployed to \textbf{AWS}.
 		\item Separated retrieval \& ranking services for independent scaling, connected by \textbf{gRPC} for minimum overhead.
-		\item Used \textbf{FAISS} for GPU-accelerated candidate retrieval \& \textbf{Redis} to reduce repeated embedding lookups.
+		\item Used \textbf{FAISS} for GPU-accelerated candidate retrieval \& write-through \textbf{Redis} cache to reduce repeated embedding lookups.
 		% \item Supported real-time embedding updates to propagate new user interactions without offline retraining.
 	\end{itemize}
 
