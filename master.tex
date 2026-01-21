@@ -329,9 +329,9 @@
 		\vspace{-0.5em}
 		\itemsep -6pt {}
 		% for more info see corresponding obsidian notebook & project docs on github
-		\item Implemented production-grade collaborative-filtering-based movie recommender, deployed to \textbf{AWS}.
+		\item Implemented production-grade two-stage (candidate-retrieval + ranking) \textbf{collaborative-filtering}-based movie recommender, deployed to \textbf{GPU-enabled AWS EC2}.
 		\item Separated retrieval \& ranking services for independent scaling, connected by \textbf{gRPC} for minimum overhead.
-		\item Used \textbf{FAISS} for GPU-accelerated candidate retrieval \& write-through \textbf{Redis} cache to reduce repeated embedding lookups.
+		\item Used \textbf{FAISS} for GPU-accelerated candidate retrieval \& \textbf{pre-warmed, Redis + Postgres write-through cache} to minimize latency when fetching repeated embeddings.
 		% \item Supported real-time embedding updates to propagate new user interactions without offline retraining.
 	\end{itemize}
 
@@ -345,10 +345,11 @@
 	\begin{itemize}
 		\vspace{-0.5em}
 		\itemsep -6pt {}
-		\item Created Google Docs clone in \textbf{Go}, able to handle multiple users' parallel real-time edits on documents.
-		\item Integrated \textbf{Automerge} CRDTs to ensure conflict-free merging of simultaneous user edits.
-		\item Designed \textbf{Websocket} event pipeline handling per-document broadcast and state propagation.
-		\item Built operation log in \textbf{Pebble key-value store} for storing \& restoring doc state.
+		\item Built \textbf{multi-threaded} real-time collaborative editor in \textbf{Go}, handling concurrent edits from many users.
+		\item Integrated \textbf{Automerge CRDTs} for conflict-free merging of simultaneous edits with \textbf{eventual consistency}.
+		\item Designed event pipeline using \textbf{goroutines} and \textbf{WebSockets} to broadcast per-document updates.
+		\item Implemented \textbf{Pebble}-backed operation log with \textbf{crash-safe recovery} \& periodic full snapshots to bound replay time.
+		% note: some plan b here ^
 		% \item Built operation log in \textbf{Pebble key-value store} for storing \& restoring doc state.
 		% \item Added server-side snapshotting to reduce recovery time and maintain consistency across editing sessions.
 	\end{itemize}
