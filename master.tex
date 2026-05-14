@@ -55,6 +55,7 @@
 		\vspace{-0.5em}
 		\itemsep -6pt {}
 		% TODO: find a better metric for the first bullet. my source wasn't correct
+		% note: plan b until confirmation
 		\item Added \textbf{OpenTelemetry} logging support across team \textbf{Golang} services using Otelslog, cutting logging costs by \textbf{79\%} by migrating from Splunk to Observe and improving incident response through log correlation.
 		% \item Participated in team on-call rotation, shadowing senior engineers to learn production incident escalation and operational workflows.
 		% TODO: talk about the infrastructure behind the "internal db" 
@@ -148,12 +149,13 @@
 		% \item Set up infrastructure for manufacturing automation by configuring and deploying {Docker} containers.
 		% note: 50% is plan b
 		% \item Set up {robotic automation} infrastructure by deploying {Docker} containers on {Linux} servers, reducing costs by up to {50\%}. 
-		\item Reduced production line costs by \textbf{$\sim$34\%} by deploying \textbf{Docker} infrastructure for wafer transporter robots.
+		% \item Reduced production line costs by \textbf{$\sim$34\%} by deploying \textbf{Docker} infrastructure for wafer transporter robots.
+		\item Deployed, tested, and monitored production \textbf{Docker} infrastructure for semiconducctor wafer transporter robots, reducing projected fab operating costs by \textbf{$\sim$34\%}.
 		% \item Set up infrastructure for {fab transporter robots} by configuring {Docker} containers on {Linux} servers.
 		% \item Ensured system reliability through unit and integration testing with Insomnia.
 		% \item Ensured system reliability through unit and integration testing with Insomnia before final deployment.
 		% \item Coordinated with {10+} sysadmins \& stakeholders to configure Oracle {SQL} databases and internal {APIs}.
-		\item Met with {10+} stakeholders to configure \textbf{Oracle SQL} databases, {REST APIs}, and documentation.
+		% \item Met with {10+} stakeholders to configure \textbf{Oracle SQL} databases, {REST APIs}, and documentation.
 		% \item Created Oracle SQL tables and views feeding 
 	\end{itemize}
 	
@@ -199,10 +201,10 @@
 	\begin{itemize}
 		\vspace{-0.5em}
 		\itemsep -6pt {}
-		\item Contributed to creation of autistic vs neurotypical speech classifier by
-		% using generative AI to 
-		% synthesizing training data.
-		creating synthetic training data.
+		% \item Contributed to creation of autistic vs neurotypical speech classifier by
+		% % using generative AI to 
+		% % synthesizing training data.
+		% creating synthetic training data.
 %		\item Used {PyTorch} to reconstruct state-of-the-art networks proposed in papers.
 		%  \item Developed an \href{https://github.com/AshkanArabim/accent-change-paper-implementation}{{accent-changer model} } able to convert foreign English accents to native using HuggingFace pretrained AI/ML models through their  API.
 		% \item Developed \href{https://github.com/AshkanArabim/accent-change-paper-implementation}{accent-changer model } to convert foreign English accents to native using HuggingFace pretrained AI/ML models.
@@ -359,7 +361,8 @@
 		\item Built \textbf{multi-threaded} real-time collaborative editor in \textbf{Go}, handling concurrent edits from many users.
 		\item Integrated \textbf{Automerge CRDTs} for conflict-free merging of simultaneous edits with \textbf{eventual consistency}.
 		\item Designed event pipeline using \textbf{goroutines} and \textbf{WebSockets} to broadcast per-document updates.
-		\item Implemented \textbf{Pebble}-backed operation log with \textbf{crash-safe recovery} \& periodic full snapshots to bound replay time.
+		% \item Implemented \textbf{Pebble}-backed operation log with \textbf{crash-safe recovery} \& periodic full snapshots to bound replay time.
+		\item Created \textbf{Pebble}-backed operation log w/ \textbf{crash-safe recovery} \& periodic snapshots to cap replay time.
 		% note: some plan b here ^
 		% \item Built operation log in \textbf{Pebble key-value store} for storing \& restoring doc state.
 		% \item Added server-side snapshotting to reduce recovery time and maintain consistency across editing sessions.
@@ -499,8 +502,8 @@
 		% \item Increased access to diverse news by creating an AI RSS news translator \& orator with {55 GitHub stars}.
 		\item Increased access to diverse news by creating an AI RSS news translator \& orator with \textbf{55 GitHub stars}.
 		% \item Implemented a microservice architecture using {Docker Compose}, for future load-balancing \& increased capacity.
-		\item Ensured load-balancing \& scaling capacity by using a \textbf{Docker Compose microservice architecture}.
-		\item Allowed instant playback using \textbf{async} programming to concurrently generate summary \& play audio.
+		% \item Ensured load-balancing \& scaling capacity by using a \textbf{Docker Compose microservice architecture}.
+		\item Allowed instant playback using \textbf{async} programming to \textbf{concurrently generate} summary \& play audio.
 %		\item Developed app that takes RSS news feeds (from any source in any language), translates \& summarizes top stories, and plays the summary back like a news briefing podcast.
 		% \item Used {Flask} with {PostgreSQL} to fetch users' news sources and pass them to LLM and TTS models for summarization.
 		% \item Used {FastAPI} with {PostgreSQL} to fetch users' news sources and pass them to {LLM and TTS models} for summarization.
@@ -919,177 +922,220 @@
 % % 	\end{itemize}
 % \end{workSection}
 
-\begin{workSection}{Skills}
-	% note: NOBODY CARES ABOUT SKILL RATINGS!!!
-	% \skillItem[
-	% 	category=Coursework,
-	% 	skills=
-	% 	data structures and algorithms{,} % note: THIS ALWAYS STAYS
-	% 	operating systems{,}
-	% 	parallel computing{,} 
-	% 	% calculus i \& ii{,}
-	% 	% relational databases{,} 
-	% 	deep learning{,} 
-	% 	machine learning{,} 
-	% 	% computer vision{,} 
-	% 	% database systems{,}
-	% 	% object-oriented programming{,} 
-	% 	% numerical analysis{,} 
-	% 	% computer organization{,} 
-	% 	% computer architecture{,} % same as above. some people call it this way
-	% 	%discrete math{,}
-	% 	%digital systems design{,}
-	% 	%programming language concepts{,}
-	% 	% programming languages{,}
-	% 	%automata{,}
-	% 	% matrix algebra{,}
-	% 	% information retrieval{,}
-	% 	% computer organization{,} 
-	% 	% probability \& statistics {,}
-	% 	%introductory mechanics{,}
-	% ] \\
-	\skillItem[
-		category=Certifications,
-		skills=
-		AWS Certified Solutions Architect - Associate (April 2026){,}
-		Coursera Deep Learning (Oct 2023){,} %(adv.){,} 
-	]
-	\\
-	\skillItem[
-		%category=Programming / Markup Languages,
-		category=Languages,
-		%Python: bee using heavily since Jan 2022
-		%Vala: since December 2023
-		%HTML/CSS: heavily since Jan 2022
-		%JS: Heavily since May 2022
-		%Java: since August 2022
-		%Bash: heavily since June 2023
-		%Haskell: used in PL, Jan - April 2024
-		%LaTeX: heavily in June
-		%C: heavily in Org / Hacktoberfest, August - December 2023
-		skills=
-		Python{,} %(adv.){,} 
-		Java{,} %(adv.){,} 
-		JavaScript{,} %(adv.){,} 
-		TypeScript{,} %(adv.){,} 
-		SQL{,} %(med.){,} 
-		Go (Golang){,} 
-		Dart{,} %(med.){,} 
-		Vala{,} %(med.){,} 
-		HTML/CSS{,} %(med.){,} 
-		% UML{,} %(med.){,} 
-		Bash shell{,} %(med.){,} 
-		% Haskell{,} %(med.){,} 
-		% \LaTeX{,} %(novice){,} 
-		% C++{,} %(novice){,} 
-		% C{,} %(novice){,} 
-		% to be fair, I used C++ more in-depth than C. plus, it looks more dope
-		% PHP{,} %(novice){,} 
-	]
-	\\
-	\skillItem[
-		category=Libraries,
-		% for data science / ML:
-		skills=
-		%GTK(med.){,} 
-		ReactJS{,} %(adv.){,} 
-		PyTorch{,} %(med.){,} 
-		TensorFlow{,} %(med.){,} 
-		scikit-learn{,} 
-		NumPy{,} %(med.){,} 
-		% Pandas{,} %(med.){,} 
-		Django{,} %(med.){,}
-		JUnit{,} 
-		% Mockito{,}
-		FastAPI{,} %(med.){,} 
-		% Supabase{,} %(med.){,} 
-		% Firebase{,} %(med.){,} 
-		Flask{,} %(med.){,} 
-		Spring Boot{,} %(med.){,} % note: plan b
-		% Redux{,} %(med.){,} 
-		% Node.JS{,} %(med.){,} 
-		% RabbitMQ{,} %(novice){,} 
-		% PHP{,} %(novice){,} % I used this for the DB final project
-		% MATLAB{,} %(novice){,} 
-		% Vue.JS{,} %(novice){,} % plan B
-		% Matplotlib{,} %(novice) 
-	]
-	\\
-	\skillItem[
-		category=Tools,
-		skills=
-		% Unix/Linux{,} %(adv.){,} 
-		Linux{,} %(adv.){,} 
-		Git{,} %(adv.){,} 
-		GitHub{,} %(adv.){,} 
-		%GitLab{,} %(med.){,} 
-		% RDBMS{,} %(adv.){,} 
-		Docker{,} %(adv.){,} 
-		% Docker Compose{,} %(med.){,} 
-		% Docker Swarm{,} %(med.){,} 
-		% Observe{,} %(med.){,}
-		AWS{,} %(novice){,}
-		Google Cloud(GCP){,} %(novice){,}
-		% Kubernetes{,} %(novice){,} 
-		% Make{,} %(novice){,} 
-		% Snowflake{,} %(novice){,}
-		MongoDB(NoSQL){,} 
-		PostgreSQL{,} %(med.){,} 
-		MySQL{,} %(med.){,} 
-		Kafka{,}
-		Cursor{,}
-		% GraphQL{,} 
-		% New Relic{,} %(novice){,}
-		% Bazel{,} %(novice){,} % plan B
-		% imagemagick 
-		% Conda{,} 
-		% Other stuff: -----------------
-		% Microsoft Office{,} 
-		% Adobe Photoshop{,} 
-		%Adobe Illustrator{,} 
-		% nah: -----------------------
-		% SSH{,} Singularity{,} Webpack {,} Jupyter,
-		% DON'T INCLUDE:
-		% Webpack
-	]
-	% \\
-	%\skillItem[
-	%    category=Certifications,
-	%    skills=Coursera Deep Learning Specialization {-} October 2023
-	%]
-	% \\
-	% \skillItem[
-	%     category=Foreign Languages,
-	%     skills=Persian (Native){,} Spanish (Fluent){,} French (Beginner)
-	% ]
-	% \\
-	% % note: keep this lower case to save space
-	% \skillItem[
-	% 	category=Concepts,
-	% 	skills=
-	% 	containerization{,} 
-	% 	unit testing{,} 
-	% 	% test driven development(TDD){,} 
-	% 	multi-threading{,} 
-	% 	concurrency{,} 
-	% 	% Integration testing{,} 
-	% 	% Agile{,} 
-	% 	% Scrum{,} 
-	% 	AI/ML{,} 
-	% 	LLMs{,} 
-	% 	CI/CD{,} 
-	% 	DevOps{,} 
-	% 	% distributed systems{,} 
-	% 	code review{,} 
-	% ]
-	%  \\
-	% \skillItem[
-	% 	category=Awards,
-	% 	skills=
-	% 	CS Engagement \& Leadership Award{,} 
-	% 	Houston Endowment Scholarship (fall 2023 - spring 2024){,} 
-	% ]
-\end{workSection}
+% \begin{workSection}{Skills}
+% 	\skillItem[
+% 		category=Languages,
+% 		skills=
+% 		Go (Golang){,}
+% 		Python{,}
+% 		Java{,}
+% 		TypeScript/JavaScript{,}
+% 		SQL
+% 	]
+% 	\\
+% 	\skillItem[
+% 		category=Frameworks \& Libraries,
+% 		skills=
+% 		FastAPI{,}
+% 		Spring Boot{,}
+% 		ReactJS{,}
+% 		PyTorch{,}
+% 		TensorFlow{,}
+% 		JUnit
+% 	]
+% 	\\
+% 	\skillItem[
+% 		category=Infra \& Tools,
+% 		skills=
+% 		AWS{,}
+% 		Docker{,}
+% 		Linux{,}
+% 		PostgreSQL{,}
+% 		Kafka{,}
+% 		Redis{,}
+% 		Databricks{,}
+% 		FAISS{,}
+% 		Git
+% 	]
+% 	\\
+% 	\skillItem[
+% 		category=Certifications,
+% 		skills=
+% 		AWS Certified Solutions Architect - Associate (April 2026)
+% 	]
+% \end{workSection}
+
+% \begin{workSection}{Skills}
+% 	% note: NOBODY CARES ABOUT SKILL RATINGS!!!
+% 	% \skillItem[
+% 	% 	category=Coursework,
+% 	% 	skills=
+% 	% 	data structures and algorithms{,} % note: THIS ALWAYS STAYS
+% 	% 	operating systems{,}
+% 	% 	parallel computing{,} 
+% 	% 	% calculus i \& ii{,}
+% 	% 	% relational databases{,} 
+% 	% 	deep learning{,} 
+% 	% 	machine learning{,} 
+% 	% 	% computer vision{,} 
+% 	% 	% database systems{,}
+% 	% 	% object-oriented programming{,} 
+% 	% 	% numerical analysis{,} 
+% 	% 	% computer organization{,} 
+% 	% 	% computer architecture{,} % same as above. some people call it this way
+% 	% 	%discrete math{,}
+% 	% 	%digital systems design{,}
+% 	% 	%programming language concepts{,}
+% 	% 	% programming languages{,}
+% 	% 	%automata{,}
+% 	% 	% matrix algebra{,}
+% 	% 	% information retrieval{,}
+% 	% 	% computer organization{,} 
+% 	% 	% probability \& statistics {,}
+% 	% 	%introductory mechanics{,}
+% 	% ] \\
+% 	\skillItem[
+% 		category=Certifications,
+% 		skills=
+% 		AWS Certified Solutions Architect - Associate (April 2026){,}
+% 		Coursera Deep Learning (Oct 2023){,} %(adv.){,} 
+% 	]
+% 	\\
+% 	\skillItem[
+% 		%category=Programming / Markup Languages,
+% 		category=Languages,
+% 		%Python: bee using heavily since Jan 2022
+% 		%Vala: since December 2023
+% 		%HTML/CSS: heavily since Jan 2022
+% 		%JS: Heavily since May 2022
+% 		%Java: since August 2022
+% 		%Bash: heavily since June 2023
+% 		%Haskell: used in PL, Jan - April 2024
+% 		%LaTeX: heavily in June
+% 		%C: heavily in Org / Hacktoberfest, August - December 2023
+% 		skills=
+% 		Python{,} %(adv.){,} 
+% 		Java{,} %(adv.){,} 
+% 		JavaScript{,} %(adv.){,} 
+% 		TypeScript{,} %(adv.){,} 
+% 		SQL{,} %(med.){,} 
+% 		Go (Golang){,} 
+% 		Dart{,} %(med.){,} 
+% 		Vala{,} %(med.){,} 
+% 		HTML/CSS{,} %(med.){,} 
+% 		% UML{,} %(med.){,} 
+% 		Bash shell{,} %(med.){,} 
+% 		% Haskell{,} %(med.){,} 
+% 		% \LaTeX{,} %(novice){,} 
+% 		% C++{,} %(novice){,} 
+% 		% C{,} %(novice){,} 
+% 		% to be fair, I used C++ more in-depth than C. plus, it looks more dope
+% 		% PHP{,} %(novice){,} 
+% 	]
+% 	\\
+% 	\skillItem[
+% 		category=Libraries,
+% 		% for data science / ML:
+% 		skills=
+% 		%GTK(med.){,} 
+% 		ReactJS{,} %(adv.){,} 
+% 		PyTorch{,} %(med.){,} 
+% 		TensorFlow{,} %(med.){,} 
+% 		scikit-learn{,} 
+% 		NumPy{,} %(med.){,} 
+% 		% Pandas{,} %(med.){,} 
+% 		Django{,} %(med.){,}
+% 		JUnit{,} 
+% 		% Mockito{,}
+% 		FastAPI{,} %(med.){,} 
+% 		% Supabase{,} %(med.){,} 
+% 		% Firebase{,} %(med.){,} 
+% 		Flask{,} %(med.){,} 
+% 		Spring Boot{,} %(med.){,} % note: plan b
+% 		% Redux{,} %(med.){,} 
+% 		% Node.JS{,} %(med.){,} 
+% 		% RabbitMQ{,} %(novice){,} 
+% 		% PHP{,} %(novice){,} % I used this for the DB final project
+% 		% MATLAB{,} %(novice){,} 
+% 		% Vue.JS{,} %(novice){,} % plan B
+% 		% Matplotlib{,} %(novice) 
+% 	]
+% 	\\
+% 	\skillItem[
+% 		category=Tools,
+% 		skills=
+% 		% Unix/Linux{,} %(adv.){,} 
+% 		Linux{,} %(adv.){,} 
+% 		Git{,} %(adv.){,} 
+% 		GitHub{,} %(adv.){,} 
+% 		%GitLab{,} %(med.){,} 
+% 		% RDBMS{,} %(adv.){,} 
+% 		Docker{,} %(adv.){,} 
+% 		% Docker Compose{,} %(med.){,} 
+% 		% Docker Swarm{,} %(med.){,} 
+% 		% Observe{,} %(med.){,}
+% 		AWS{,} %(novice){,}
+% 		Google Cloud(GCP){,} %(novice){,}
+% 		% Kubernetes{,} %(novice){,} 
+% 		% Make{,} %(novice){,} 
+% 		% Snowflake{,} %(novice){,}
+% 		MongoDB(NoSQL){,} 
+% 		PostgreSQL{,} %(med.){,} 
+% 		MySQL{,} %(med.){,} 
+% 		Kafka{,}
+% 		Cursor{,}
+% 		% GraphQL{,} 
+% 		% New Relic{,} %(novice){,}
+% 		% Bazel{,} %(novice){,} % plan B
+% 		% imagemagick 
+% 		% Conda{,} 
+% 		% Other stuff: -----------------
+% 		% Microsoft Office{,} 
+% 		% Adobe Photoshop{,} 
+% 		%Adobe Illustrator{,} 
+% 		% nah: -----------------------
+% 		% SSH{,} Singularity{,} Webpack {,} Jupyter,
+% 		% DON'T INCLUDE:
+% 		% Webpack
+% 	]
+% 	% \\
+% 	%\skillItem[
+% 	%    category=Certifications,
+% 	%    skills=Coursera Deep Learning Specialization {-} October 2023
+% 	%]
+% 	% \\
+% 	% \skillItem[
+% 	%     category=Foreign Languages,
+% 	%     skills=Persian (Native){,} Spanish (Fluent){,} French (Beginner)
+% 	% ]
+% 	% \\
+% 	% % note: keep this lower case to save space
+% 	% \skillItem[
+% 	% 	category=Concepts,
+% 	% 	skills=
+% 	% 	containerization{,} 
+% 	% 	unit testing{,} 
+% 	% 	% test driven development(TDD){,} 
+% 	% 	multi-threading{,} 
+% 	% 	concurrency{,} 
+% 	% 	% Integration testing{,} 
+% 	% 	% Agile{,} 
+% 	% 	% Scrum{,} 
+% 	% 	AI/ML{,} 
+% 	% 	LLMs{,} 
+% 	% 	CI/CD{,} 
+% 	% 	DevOps{,} 
+% 	% 	% distributed systems{,} 
+% 	% 	code review{,} 
+% 	% ]
+% 	%  \\
+% 	% \skillItem[
+% 	% 	category=Awards,
+% 	% 	skills=
+% 	% 	CS Engagement \& Leadership Award{,} 
+% 	% 	Houston Endowment Scholarship (fall 2023 - spring 2024){,} 
+% 	% ]
+% \end{workSection}
 
 % \begin{workSection}{Publications}
 % cite ACM Mobihoc paper
