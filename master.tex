@@ -358,11 +358,14 @@
 	\begin{itemize}
 		\vspace{-0.5em}
 		\itemsep -6pt {}
-		\item Built \textbf{multi-threaded} real-time collaborative editor in \textbf{Go}, handling concurrent edits from many users.
+		% \item Built \textbf{multi-threaded} real-time collaborative editor in \textbf{Go}, handling concurrent edits from many users.
+		\item Built \textbf{multi-threaded} real-time collaborative editor in \textbf{Go}, capable of \textbf{930+ edits/s} on Apple M4.
 		\item Integrated \textbf{Automerge CRDTs} for conflict-free merging of simultaneous edits with \textbf{eventual consistency}.
 		\item Designed event pipeline using \textbf{goroutines} and \textbf{WebSockets} to broadcast per-document updates.
 		% \item Implemented \textbf{Pebble}-backed operation log with \textbf{crash-safe recovery} \& periodic full snapshots to bound replay time.
-		\item Created \textbf{Pebble}-backed operation log w/ \textbf{crash-safe recovery} \& periodic snapshots to cap replay time.
+		% \item Created \textbf{Pebble}-backed operation log w/ \textbf{crash-safe recovery} \& periodic snapshots to cap replay time.
+		% note: I forgot why I wrote "crash safe recovery"
+		\item Created \textbf{Pebble}-backed operation log w/ periodic snapshots to cap operation replay time.
 		% note: some plan b here ^
 		% \item Built operation log in \textbf{Pebble key-value store} for storing \& restoring doc state.
 		% \item Added server-side snapshotting to reduce recovery time and maintain consistency across editing sessions.
