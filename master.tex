@@ -61,9 +61,9 @@
 		\itemsep -6pt {}
 		% TODO: resolved the write applicant v2 endpoint that caused the risk event.
 		% note: plan b of TIN certification date stuff
-		\item Built a \textbf{Golang} microservice, deployed using \textbf{AWS Lambda}, enabling internal services to read and write customer tax withholding data during migration from the legacy FIS Profile database.
-		% note: plan b
-		\item Wrote \textbf{Grafana K6} load tests simulating Discover user data migration into Capital One's customer DB.
+		\item Built \textbf{Golang} microservice, deployed to \textbf{AWS Lambda}, \& monitored during 2-week on-call rotation, enabling internal services to read \& write customer tax withholding data during migration from the legacy FIS DB.
+		% note: plan b, allowing it to monitor ^, though originally for discover to c1 data migration by conduit
+		\item Wrote \textbf{Grafana K6} load test for QA-deployed Lambda simulating data migration load onto infrastructure.
 		% TODO: find a better metric for the first bullet. my source wasn't correct
 		% note: plan b until confirmation
 		\item Added \textbf{OpenTelemetry} logging support across team microservices using Otelslog, cutting logging costs by \textbf{68\%} by migrating from Splunk to Observe and improving incident response through log correlation.
