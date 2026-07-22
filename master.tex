@@ -59,13 +59,18 @@
 	\begin{itemize}
 		\vspace{-0.5em}
 		\itemsep -6pt {}
+		% TODO: resolved the write applicant v2 endpoint that caused the risk event.
+		% note: plan b of TIN certification date stuff
+		\item Built a \textbf{Golang} microservice enabling internal services to read and write customer tax withholding data during migration from the legacy FIS Profile database.
+		% note: plan b
+		\item Wrote \textbf{Grafana K6} load tests simulating Discover user data migration into Capital One's customer DB.
 		% TODO: find a better metric for the first bullet. my source wasn't correct
 		% note: plan b until confirmation
-		\item Added \textbf{OpenTelemetry} logging support across team \textbf{Golang} services using Otelslog, cutting logging costs by \textbf{68\%} by migrating from Splunk to Observe and improving incident response through log correlation.
+		\item Added \textbf{OpenTelemetry} logging support across team microservices using Otelslog, cutting logging costs by \textbf{68\%} by migrating from Splunk to Observe and improving incident response through log correlation.
 		% \item Participated in team on-call rotation, shadowing senior engineers to learn production incident escalation and operational workflows.
 		% TODO: talk about the infrastructure behind the "internal db" 
 		% TODO:
-		\item Implemented API contract changes across multiple \textbf{Go} microservices \& \textbf{OpenAPI} schemas supporting a phased migration from legacy to \textbf{AWS}-based customer data systems handling \textbf{6+M requests/week}.
+		% \item Implemented API contract changes across multiple \textbf{Go} microservices \& \textbf{OpenAPI} schemas supporting a phased migration from legacy to \textbf{AWS}-based customer data systems handling \textbf{6+M requests/week}.
 	\end{itemize}
 	
 	\experienceItem[
@@ -321,6 +326,23 @@
 
 \begin{workSection}{Projects}
 
+	% note: never completed.
+	% \customItem[
+	% 	title=,
+	% 	technologies= Rust,
+	% 	% duration=Solo
+	% ]
+	% \begin{itemize}
+	% 	\vspace{-0.5em}
+	% 	\itemsep -6pt {}
+	% 	\item Created full-stack application to streamline Docker container exploit assessments for DEVCOM testers.
+	% 	\item Automated container security scans with \textbf{Trivy, Grype, Dockle} to enumerate CVE-referenced vulnerabilities.
+	% 	\item Developed interactive topology map using \textbf{Docker API}, \textbf{Nmap}, \& \textbf{Neo4j} for container discovery.
+	% 	% \item Implemented secure SSH tunnel connectivity with automated retries within 10 seconds.
+	% 	\item Orchestrated automated penetration tests using \textbf{Metasploit} to identify and validate exploitable flaws.
+	% \end{itemize}
+
+	% note: plan b vvv
 	% \customItem[
 	% 	title=Docker Exploit Manager,
 	% 	technologies= | JavaScript{,} Svelte{,} Python{,} Docker{,} Neo4j{,} Trivy{,} Grype{,} Dockle{,} Metasploit,
