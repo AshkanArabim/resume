@@ -61,7 +61,8 @@
 		\itemsep -6pt {}
 		% TODO: resolved the write applicant v2 endpoint that caused the risk event.
 		% note: plan b of TIN certification date stuff
-		\item Built \textbf{Golang} microservice, deployed to \textbf{AWS Lambda}, \& monitored during 2-week on-call rotation, enabling internal services to read \& write customer tax withholding data during migration from the legacy FIS DB.
+		\item Built \textbf{AWS Lambda Golang microservice}, monitored during 2-week oncall shifts, for internal clients to update customer tax withholding data at up to \textbf{200TPS} as it's migrated in phases to in-house DB.
+		\item Created \textbf{Claude Code} skill to automate onboarding tickets into code changes and GitHub PRs.
 		% note: plan b, allowing it to monitor ^, though originally for discover to c1 data migration by conduit
 		\item Wrote \textbf{Grafana K6} load test for QA-deployed Lambda simulating data migration load onto infrastructure.
 		% TODO: find a better metric for the first bullet. my source wasn't correct
@@ -116,7 +117,7 @@
 		% \item Extended {Java} data lineage plugin to support consumer spending data though test-driven development with {JUnit}.
 		% \item Extended \textbf{Java}-based lineage plugin to log custom data transformations using a YAML specification.
 		\item Extended \textbf{Java}-based plugin to log custom \textbf{Apache Spark} data lineage events using a YAML specification. % note: mild plan b
-		\item Applied \textbf{test-driven development} using \textbf{JUnit} and \textbf{Mockito} to ensure robust, maintainable code.
+		% \item Applied \textbf{test-driven development} using \textbf{JUnit} and \textbf{Mockito} to ensure robust, maintainable code.
 
 		% note: fuck it. just doing plan B is easier.
 		% \item Created plugin to log card data transformations using {Java} and {JUnit} test-driven development, improving audit-readiness.
