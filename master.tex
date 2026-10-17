@@ -64,7 +64,7 @@
 		% note: plan b of TIN certification date stuff
 		% \item Developed RL-driven customer complaint triage POC system to resolve a 40\% historical mis-match of customer complaints and product teams using \textbf{ChromaDB}
 		\item Developed a POC semantic complaint routing engine using embeddings and \textbf{ChromaDB} cosine similarity to match incoming complaints with product teams, targeting a \textbf{40\% historical misassignment rate}.
-		\item Implemented an online relevance-feedback algorithm (Rocchio-style feedback) to adjust team embeddings from product manager accept/reject decisions, with \textbf{asynchronous Kafka-based reassignment}.
+		\item Implemented an online relevance-feedback algorithm (Rocchio-style feedback) to adjust team embeddings from product manager accept/reject decisions, with \textbf{asynchronous reassignment using AWS SQS}.
 		% note: ^^ x3; ugh bro the tech stack for this shit is even worse than the movie rec engine project I did on my own...
 		% note: ^^ it's just pytorch + chromadb + very basic incremental updates to the embeddings. basically what I did in the movie rec engine project.
 		\item Built \textbf{AWS Lambda Golang microservice}, to orchestrate internal clients' R/W operations on customer tax information at up to \textbf{200TPS} while they're gradually migrated from legacy Profile DB to in-house DB.
@@ -77,7 +77,7 @@
 		% note: plan b, allowing it to monitor ^, though originally for discover to c1 data migration by conduit
 		\item Created \textbf{Claude Code} skill to automate onboarding tickets into code changes and GitHub PRs, currently \textbf{in use across customer orchestration domain with 30+ engineers}.
 		% note: ^ x3; 
-		\item Wrote \textbf{Grafana K6} load tests for Lambdas in QA env simulating \textbf{Discover data migration} onto infrastructure.
+		\item Wrote \textbf{Grafana K6} load tests for Lambdas in QA simulating \textbf{Discover data migration load} onto infrastructure.
 		% TODO: find a better metric for the first bullet. my source wasn't correct
 		% note: plan b until confirmation
 		% \item Added \textbf{OpenTelemetry} logging support across team microservices using Otelslog, cutting logging costs by \textbf{68\%} by migrating from Splunk to Observe and improving incident response through log correlation.
